@@ -1,6 +1,4 @@
-﻿using API_QuanLyKho.Model;
-using Azure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
