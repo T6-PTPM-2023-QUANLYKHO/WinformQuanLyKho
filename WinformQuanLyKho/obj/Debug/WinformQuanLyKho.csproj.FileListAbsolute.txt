@@ -12,3 +12,7 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\bin\Debug\Newtonso
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CopyComplete
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.exe
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\bin\Debug\FrmUCLibrary.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\bin\Debug\FrmUCLibrary.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\bin\Debug\Library.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\WinformQuanLyKho\bin\Debug\Library.pdb
