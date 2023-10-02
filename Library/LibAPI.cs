@@ -1,25 +1,23 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Net.Http;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinformQuanLyKho.DTO
+namespace Library
 {
-    public class Lib_API
+    public class LibAPI
     {
-        public Lib_API() { }
+        public LibAPI() { }
         public async Task<string> getData(string url)
         {
             using (HttpClient client = new HttpClient())
             {
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync("https://localhost:44327/api/khach-hang/get-all");
+                    HttpResponseMessage response = await client.GetAsync(url);
 
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -31,15 +29,37 @@ namespace WinformQuanLyKho.DTO
                     else
                     {
                         Console.WriteLine($"Lỗi: {response.StatusCode}");
-                        return null;
+                        return "";
                     }
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Lỗi: {ex.Message}");
-                    return null;
+                    return "";
                 }
             }
+        }
+        public async Task<int> Update(object model, string url)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                string json = JsonConvert.SerializeObject(model);
+                //phương thưc
+                HttpMethod method = new HttpMethod("PUT");
+                HttpRequestMessage request = new HttpRequestMessage(method, url)
+                {
+                    Content = new StringContent(json, Encoding.UTF8, "application/json")
+                };
+                HttpResponseMessage response = await client.SendAsync(request);
+                if (response.IsSuccessStatusCode)
+                {
+                    return 1;
+                }
+                else { return 0; }
+                return 0;
+            }
+            catch { return 0; }
         }
         public async Task<int> insertData(object model, string url)
         {
@@ -71,7 +91,7 @@ namespace WinformQuanLyKho.DTO
                 }
             }
         }
-        public async Task<int> deleteData(string url,string id) //nếu có nhiều hơn overload thêm nữa
+        public async Task<int> deleteData(string url, string id) //nếu có nhiều hơn overload thêm nữa
         {
             using (HttpClient client = new HttpClient())
             {
@@ -83,8 +103,7 @@ namespace WinformQuanLyKho.DTO
                     // Thêm các tham số trên URL để xác định đối tượng hoặc tài nguyên cần xóa
                     // Ví dụ, xóa đối tượng có mã là "KH001"
                     string objectIdToDelete = id;
-                    apiUrl += $"/{objectIdToDelete}";
-
+                    apiUrl += $"/{objectIdToDelete}";                   
                     // Gửi yêu cầu HTTP DELETE đến API
                     HttpResponseMessage response = await client.DeleteAsync(apiUrl);
 
@@ -107,6 +126,5 @@ namespace WinformQuanLyKho.DTO
                 }
             }
         }
-         
     }
 }
