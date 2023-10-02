@@ -50,16 +50,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\KhachHangModel.cs" />
-    <Compile Include="GUI\FrmKhachHang\frmTT_KH.cs">
+    <Compile Include="GUI\FrmKhachHang\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FrmKhachHang\Form1.Designer.cs">
-      <DependentUpon>frmTT_KH.cs</DependentUpon>
+    <Compile Include="GUI\FrmKhachHang\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\FrmKhachHang\Form1.resx">
-      <DependentUpon>frmTT_KH.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FrmKhachHang\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

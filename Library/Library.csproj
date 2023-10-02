@@ -52,5 +52,13 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="icons\icons8-delete-16.png" />
+    <Content Include="icons\icons8-plus-16.png" />
+    <Content Include="icons\icons8-plus-26.png" />
+    <Content Include="icons\icons8-reload-24.png" />
+    <Content Include="icons\icons8-update-24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

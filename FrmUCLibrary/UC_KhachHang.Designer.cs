@@ -30,7 +30,6 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.btn_lamMoi = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
@@ -71,25 +70,14 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.btn_lamMoi);
             this.panel2.Controls.Add(this.btn_Sua);
             this.panel2.Controls.Add(this.btn_Xoa);
             this.panel2.Controls.Add(this.btn__Them);
-            this.panel2.Location = new System.Drawing.Point(3, 478);
+            this.panel2.Location = new System.Drawing.Point(3, 464);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1030, 55);
             this.panel2.TabIndex = 13;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(841, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 36);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Tạo phiếu xuất hàng";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // btn_lamMoi
             // 
@@ -138,7 +126,7 @@
             // panel_DataGridView
             // 
             this.panel_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_DataGridView.Location = new System.Drawing.Point(3, 190);
+            this.panel_DataGridView.Location = new System.Drawing.Point(3, 176);
             this.panel_DataGridView.Name = "panel_DataGridView";
             this.panel_DataGridView.Size = new System.Drawing.Size(1030, 282);
             this.panel_DataGridView.TabIndex = 14;
@@ -278,7 +266,7 @@
             this.panel_ThongTinKH.Controls.Add(this.label1);
             this.panel_ThongTinKH.Location = new System.Drawing.Point(3, 48);
             this.panel_ThongTinKH.Name = "panel_ThongTinKH";
-            this.panel_ThongTinKH.Size = new System.Drawing.Size(1030, 136);
+            this.panel_ThongTinKH.Size = new System.Drawing.Size(1172, 122);
             this.panel_ThongTinKH.TabIndex = 0;
             // 
             // txt_Email
@@ -313,12 +301,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Controls.Add(this.panel_DataGridView);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel_DataGridView);
             this.Controls.Add(this.panel_ThongTinKH);
+            this.Controls.Add(this.label2);
             this.Name = "UC_KhachHang";
-            this.Size = new System.Drawing.Size(1036, 552);
+            this.Size = new System.Drawing.Size(1186, 552);
             this.panel2.ResumeLayout(false);
             this.panel_ThongTinKH.ResumeLayout(false);
             this.panel_ThongTinKH.PerformLayout();
@@ -335,7 +323,6 @@
         private System.Windows.Forms.Button btn__Them;
         private System.Windows.Forms.Panel panel_DataGridView;
         private System.Windows.Forms.Button btn_lamMoi;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_maKH;
         private System.Windows.Forms.Button btn_search;

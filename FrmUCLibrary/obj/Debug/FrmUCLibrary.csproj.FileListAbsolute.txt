@@ -11,3 +11,6 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\bin\Debug\Newtonsoft.J
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\bin\Debug\Library.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\bin\Debug\Newtonsoft.Json.xml
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CopyComplete
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_NhaCungCap.resources
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\obj\Debug\FrmUCLibrary.Properties.Resources.resources
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_PhieuXuatHang.resources

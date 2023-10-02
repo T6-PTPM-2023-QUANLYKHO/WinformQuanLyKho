@@ -23,5 +23,17 @@ namespace Library
             makh = "KH" + ngay+thang+phut+giay;
             return makh;
         }
+        public static string createMaNCC()
+        {
+            string makh = "";
+            string ngay = DateTime.Today.Day.ToString();
+            string thang = DateTime.Today.Month.ToString();
+            // string nam = DateTime.Today.Year.ToString().Substring(2,2);
+            string gio = DateTime.Now.Hour.ToString();
+            string phut = DateTime.Now.Minute.ToString();
+            string giay = DateTime.Now.Second.ToString();
+            makh = "NCC" + ngay + thang + phut + giay;
+            return makh;
+        }
     }
 }
