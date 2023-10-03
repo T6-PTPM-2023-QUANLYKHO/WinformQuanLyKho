@@ -45,9 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\KhachHangModel.cs" />
-    <Compile Include="Model\NhaCungCapModel.cs" />
-    <Compile Include="Model\SanPhamModel.cs" />
     <Compile Include="Model\XuLyKhachHangModel.cs" />
     <Compile Include="Model\XuLyNhaCungCapModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

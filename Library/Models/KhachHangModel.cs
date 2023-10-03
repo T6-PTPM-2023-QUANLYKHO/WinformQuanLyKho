@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinformQuanLyKho.DTO
+namespace Library.Models
 {
-    internal class KhachHangModel
+    public class KhachHangModel
     {
+        public KhachHangModel() { }
         public KhachHangModel(string MAKH, string TEN_KH, string DIACHI_KH, string GIOITINH_KH, string SDT_KH, string EMAIL_KH, string FAX)
         {
             this.MAKH = MAKH;

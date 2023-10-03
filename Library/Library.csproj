@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper.cs" />
+    <Compile Include="Models\KhachHangModel.cs" />
+    <Compile Include="Models\NhaCungCapModel.cs" />
+    <Compile Include="Models\SanPhamModel.cs" />
     <Compile Include="storage_API.cs" />
     <Compile Include="LibAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

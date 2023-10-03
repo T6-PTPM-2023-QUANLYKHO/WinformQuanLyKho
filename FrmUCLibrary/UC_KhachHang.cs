@@ -11,6 +11,7 @@ using FrmUCLibrary;
 using FrmUCLibrary.Model;
 using System.Runtime.InteropServices;
 using Library;
+using Library.Models;
 
 namespace FrmUCLibrary
 {

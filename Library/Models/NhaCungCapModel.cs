@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace FrmUCLibrary.Model
+namespace Library.Models
 {
     public class NhaCungCapModel
     {
@@ -44,7 +42,8 @@ namespace FrmUCLibrary.Model
             get { return _diaChi_NCC; }
             set { this._diaChi_NCC = value; }
         }
-        public string sdt {
+        public string sdt
+        {
             get { return _sdt; }
             set { this._sdt = value; }
         }

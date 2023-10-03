@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\KhachHangModel.cs" />
     <Compile Include="GUI\FrmKhachHang\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +86,7 @@
   <ItemGroup>
     <Folder Include="BLL\" />
     <Folder Include="DAL\" />
+    <Folder Include="DTO\" />
     <Folder Include="Library\" />
   </ItemGroup>
   <ItemGroup>
