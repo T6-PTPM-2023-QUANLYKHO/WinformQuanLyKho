@@ -37,5 +37,19 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             UC_KhachHang ucKH = new UC_KhachHang();
             mainContent.Controls.Add(ucKH);
         }
+
+        private void menuItemDSNV_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_NhanVien ucNV = new UC_NhanVien();
+            mainContent.Controls.Add(ucNV);
+        }
+
+        private void menuItemDSSP_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_SanPham ucSP = new UC_SanPham();
+            mainContent.Controls.Add(ucSP);
+        }
     }
 }

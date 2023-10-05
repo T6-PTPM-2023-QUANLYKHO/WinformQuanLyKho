@@ -7,3 +7,11 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\Library\bin\Debug\Newtonsoft.Json.x
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\Library\obj\Debug\Library.csproj.CopyComplete
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\Library\obj\Debug\Library.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\Library\obj\Debug\Library.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\bin\Debug\Library.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\bin\Debug\Library.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\bin\Debug\Newtonsoft.Json.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\bin\Debug\Newtonsoft.Json.xml
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\obj\Debug\Library.csproj.CopyComplete
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\obj\Debug\Library.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\Library\obj\Debug\Library.pdb
