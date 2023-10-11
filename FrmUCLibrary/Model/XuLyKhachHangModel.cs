@@ -39,7 +39,7 @@ namespace FrmUCLibrary.Model
             KhachHangModel listKhachHang = JsonConvert.DeserializeObject<KhachHangModel>(json);
             if (listKhachHang != null) { return listKhachHang; }
             return null;
-        }
+        }       
         public async Task<int> deleteKhachHang(string makH) 
         {
             string url = api.deleteKhachHang;

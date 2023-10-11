@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\XuLyChiTietPhieuXuatModel.cs" />
     <Compile Include="Model\XuLyKhachHangModel.cs" />
+    <Compile Include="Model\XuLyLoaiSanPhamModel.cs" />
     <Compile Include="Model\XuLyNhaCungCapModel.cs" />
+    <Compile Include="Model\XuLyPhieuXuatModel.cs" />
+    <Compile Include="Model\XuLySanPhamModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -188,13 +188,13 @@ namespace FrmUCLibrary
             txt_SoDienThoai.Text = kh.SDT_KH;
             txt_fax.Text = kh.FAX;
             txt_Email.Text = kh.EMAIL_KH;
-            if (kh.GIOITINH_KH.ToLower().Equals("nam"))
+            if (kh.GIOITINH_KH.Equals("nam") || kh.GIOITINH_KH.Equals("Nam") || kh.GIOITINH_KH.Equals("NAM"))
             {
-                cbx_gioiTinh.SelectedIndex = 1;
+                cbx_gioiTinh.SelectedIndex = 0;
             }
             else
             {
-                cbx_gioiTinh.SelectedIndex = 0;
+                cbx_gioiTinh.SelectedIndex = 1;
             }
         }
         private void clearControl()
@@ -256,7 +256,7 @@ namespace FrmUCLibrary
             if (result == DialogResult.Yes)
             {
                 string maKH = txt_maKH.Text;
-                if (KT_TonTaiMaKH(maKH) == true) { ThongBao("Khách hàng không tồn tại!"); return; }
+                if (KT_TonTaiMaKH(maKH) == false) { ThongBao("Khách hàng không tồn tại!"); return; }
                 if (String.IsNullOrEmpty(maKH)) { MessageBox.Show("Bạn chưa chọn khách hàng!"); }
                 else
                 {
@@ -287,6 +287,7 @@ namespace FrmUCLibrary
         {
             if (checkTTKhachHang() == false) { MessageBox.Show("Kiểm tra lại thông tin khách hàng"); }
             KhachHangModel kh = getValueThongTinKhachHang();
+            if(kh == null) { return; }
             if (KT_TonTaiMaKH(kh.MAKH) == true) {ThongBao("Khách hàng đã tồn tại"); return; }
             else
             {
@@ -320,8 +321,10 @@ namespace FrmUCLibrary
             string gioitinh = "";
             try
             {
-
-                gioitinh = cbx_gioiTinh.SelectedItem.ToString();
+                if (cbx_gioiTinh.SelectedItem != null)
+                {
+                    gioitinh = cbx_gioiTinh.SelectedItem.ToString();
+                }
             }
             catch
             {

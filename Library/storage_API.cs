@@ -11,19 +11,72 @@ namespace Library
     {
         public class API_KhachHang
         {
-            private string _getAllKH = @"https://localhost:7202/api/khach-hang/get-all";
-            private string _getKHBySDT = @"https://localhost:7202/api/khach-hang/get-by-sdt/";
-            private string _deleteKhachHang = @"https://localhost:7202/api/khach-hang/remove-by-ma-khach-hang";
-            private string _insertKhachHang = "https://localhost:7202/api/khach-hang/add-item";
-            private string _updateKhachHang = @"https://localhost:7202/api/khach-hang/update";
-            //
-            private string _getAllNhaCungCap = @"https://localhost:7202/api/nha-cung-cap/get-all";
-            private string _insertNhaCungCap = @"https://localhost:7202/api/nha-cung-cap/add-item";
-            private string _deleteNhaCungCap = @"https://localhost:7202/api/nha-cung-cap/remove-by-maphieu";
-            private string _updateNhaCungCap = @"https://localhost:7202/api/nha-cung-cap/update";
-            private string _timKiemNhaCungCapSDT = @"https://localhost:7202/api/nha-cung-cap/get-by-sdt";
-            //
-            private string _getAllSanPham = @"https://localhost:7202/api/San-pham/get-all";
+            private static string host = @"https://localhost:7202";
+            //khách hàng
+            private string _getAllKH = host+@"/api/khach-hang/get-all";
+            private string _getKHBySDT = host+@"/api/khach-hang/get-by-sdt/";
+            private string _deleteKhachHang =host+ @"/api/khach-hang/remove-by-ma-khach-hang";
+            private string _insertKhachHang = host + "/api/khach-hang/add-item";
+            private string _updateKhachHang = host + @"/api/khach-hang/update";
+            //Nhà cung cấp
+            private string _getAllNhaCungCap = host +@"/api/nha-cung-cap/get-all";
+            private string _insertNhaCungCap = host + @"/api/nha-cung-cap/add-item";
+            private string _deleteNhaCungCap = host + @"/api/nha-cung-cap/remove-by-maphieu";
+            private string _updateNhaCungCap = host + @"/api/nha-cung-cap/update";
+            private string _timKiemNhaCungCapSDT = host + @"/api/nha-cung-cap/get-by-sdt";
+            //sản phẩm
+            private string _getAllSanPham = host + @"/api/San-pham/get-all";
+            private string _getSPById = host + @"/api/San-pham/get-by-id/";
+            //Loại sản phẩm
+            private string _getAllLoaiSP = host + @"/api/loai-sp/get-all";
+            //Phiếu Xuất Hàng
+            private string _getAllPhieuXuat = host + @"/api/phieu-xuat-hang/get-all";
+            private string _addPhieuXuat = host + @"/api/phieu-xuat-hang/add-item";
+            private string _deletePhieuXuat = host + @"/api/phieu-xuat-hang/remove-by-maphieuxh/";
+            //Chi tiết xuất hàng
+            private string _insertCTXuatHang = host + @"/api/chi-tiet-xuat-hang/add-item";
+            private string _deleteCTPhieuXuatMaPh = host + @"/api/chi-tiet-xuat-hang/remove/";
+            private string _getCTPhieuXuatByMaPhieu = host + @"/api/chi-tiet-xuat-hang/get-by-id/";
+            public string getCTPhieuXuatByMaPhieu
+            {
+                get { return _getCTPhieuXuatByMaPhieu; }
+                set { _getCTPhieuXuatByMaPhieu = value; }
+            }
+            public string getAllPhieuXuat
+            {
+                get { return _getAllPhieuXuat; }
+                set { _getAllPhieuXuat = value; }
+            }
+            public string deleteCTPhieuXuatMaPh
+            {
+                get { return _deleteCTPhieuXuatMaPh; }
+                set { _deleteCTPhieuXuatMaPh = value; }
+            }
+            public string deletePhieuXuat
+            {
+                get { return _deletePhieuXuat; }
+                set { _deletePhieuXuat = value; }
+            }
+            public string addPhieuXuat
+            {
+                get { return _addPhieuXuat; }
+                set { _addPhieuXuat = value; }
+            }
+            public string insertCTXuatHang
+            {
+                get { return _insertCTXuatHang; }
+                set { _insertCTXuatHang = value; }
+            }
+            public string getSPById
+            {
+                get { return _getSPById; }
+                set { _getSPById = value; }
+            }
+            public string getAllLoaiSP
+            {
+                get { return _getAllLoaiSP; }
+                set { _getAllLoaiSP = value; }
+            }
             public string getAllSanPham
             {
                 get { return _getAllSanPham; }

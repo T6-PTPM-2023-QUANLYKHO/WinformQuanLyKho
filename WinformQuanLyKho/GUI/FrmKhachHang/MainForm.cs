@@ -22,7 +22,11 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
 
         private void Frm_PhieuXuatHang_Load(object sender, EventArgs e)
         {
-           
+            this.WindowState = FormWindowState.Maximized;
+            int chieurong = Screen.PrimaryScreen.WorkingArea.Width;
+            int chieudai = Screen.PrimaryScreen.WorkingArea.Height;
+            mainContent.Width = chieurong;
+            mainContent.Height = chieudai-menuStrip1.Height;
         }
         private void tạoPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         { 

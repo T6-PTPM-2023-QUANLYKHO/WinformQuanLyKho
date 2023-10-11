@@ -35,5 +35,16 @@ namespace Library
             makh = "NCC" + ngay + thang + phut + giay;
             return makh;
         }
+        public static string createMaPhieuXuat()
+        {
+            string ma = "";
+            string ngay = DateTime.Today.Day.ToString();
+            string thang = DateTime.Today.Month.ToString();
+            string gio = DateTime.Now.Hour.ToString();
+            string phut = DateTime.Now.Minute.ToString();
+            string giay = DateTime.Now.Second.ToString();
+            ma = "PX" + ngay + thang + phut + giay;
+            return ma;
+        }
     }
 }

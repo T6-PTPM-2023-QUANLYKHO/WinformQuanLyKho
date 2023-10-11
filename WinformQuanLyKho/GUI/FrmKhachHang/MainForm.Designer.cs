@@ -41,12 +41,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kháchHàngToolStripMenuItem,
             this.nhàCungCấpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1253, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1253, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,27 +58,27 @@
             this.tạoPhiếuXuấtToolStripMenuItem,
             this.thốngKêPhiếuXuấtToolStripMenuItem});
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
             this.kháchHàngToolStripMenuItem.Text = "Khách Hàng ";
             // 
             // cậpNhậtThôngTinToolStripMenuItem
             // 
             this.cậpNhậtThôngTinToolStripMenuItem.Name = "cậpNhậtThôngTinToolStripMenuItem";
-            this.cậpNhậtThôngTinToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.cậpNhậtThôngTinToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.cậpNhậtThôngTinToolStripMenuItem.Text = "Danh sách khách hàng";
             this.cậpNhậtThôngTinToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtThôngTinToolStripMenuItem_Click_1);
             // 
             // tạoPhiếuXuấtToolStripMenuItem
             // 
             this.tạoPhiếuXuấtToolStripMenuItem.Name = "tạoPhiếuXuấtToolStripMenuItem";
-            this.tạoPhiếuXuấtToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.tạoPhiếuXuấtToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.tạoPhiếuXuấtToolStripMenuItem.Text = "Tạo phiếu xuất";
             this.tạoPhiếuXuấtToolStripMenuItem.Click += new System.EventHandler(this.tạoPhiếuXuấtToolStripMenuItem_Click);
             // 
             // thốngKêPhiếuXuấtToolStripMenuItem
             // 
             this.thốngKêPhiếuXuấtToolStripMenuItem.Name = "thốngKêPhiếuXuấtToolStripMenuItem";
-            this.thốngKêPhiếuXuấtToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.thốngKêPhiếuXuấtToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.thốngKêPhiếuXuấtToolStripMenuItem.Text = "Danh sách phiếu xuất ";
             // 
             // nhàCungCấpToolStripMenuItem
@@ -85,20 +86,21 @@
             this.nhàCungCấpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinNhàCungCấpToolStripMenuItem});
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
             this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
             // 
             // thôngTinNhàCungCấpToolStripMenuItem
             // 
             this.thôngTinNhàCungCấpToolStripMenuItem.Name = "thôngTinNhàCungCấpToolStripMenuItem";
-            this.thôngTinNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.thôngTinNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
             this.thôngTinNhàCungCấpToolStripMenuItem.Text = "Thông tin nhà cung cấp";
             // 
             // mainContent
             // 
-            this.mainContent.Location = new System.Drawing.Point(12, 27);
+            this.mainContent.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.mainContent.Location = new System.Drawing.Point(12, 31);
             this.mainContent.Name = "mainContent";
-            this.mainContent.Size = new System.Drawing.Size(1229, 522);
+            this.mainContent.Size = new System.Drawing.Size(1229, 518);
             this.mainContent.TabIndex = 1;
             // 
             // MainForm
