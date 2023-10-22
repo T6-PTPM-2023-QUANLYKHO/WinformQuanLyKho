@@ -51,6 +51,11 @@
     <Compile Include="Model\XuLyNhaCungCapModel.cs" />
     <Compile Include="Model\XuLyPhieuXuatModel.cs" />
     <Compile Include="Model\XuLySanPhamModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +80,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
