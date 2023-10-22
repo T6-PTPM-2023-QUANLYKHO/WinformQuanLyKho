@@ -51,11 +51,6 @@
     <Compile Include="Model\XuLyNhaCungCapModel.cs" />
     <Compile Include="Model\XuLyPhieuXuatModel.cs" />
     <Compile Include="Model\XuLySanPhamModel.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,7 +75,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
@@ -102,10 +96,28 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-plus-50.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-plus-26.png" />
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

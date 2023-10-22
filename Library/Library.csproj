@@ -58,13 +58,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="icons\icons8-delete-16.png" />
-    <Content Include="icons\icons8-plus-16.png" />
-    <Content Include="icons\icons8-plus-26.png" />
-    <Content Include="icons\icons8-reload-24.png" />
-    <Content Include="icons\icons8-update-24.png" />
+    <Content Include="icons\checklist24.png" />
+    <Content Include="icons\checklist.png" />
+    <Content Include="icons\plus24.png" />
+    <Content Include="icons\plus.png" />
+    <Content Include="icons\remove24.png" />
+    <Content Include="icons\remove.png" />
+    <Content Include="icons\save24.png" />
+    <Content Include="icons\save.png" />
+    <Content Include="icons\search.png" />
+    <Content Include="icons\update24.png" />
+    <Content Include="icons\update.png" />
+    <Content Include="icons\updated.png" />
+    <Content Include="icons\updated24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

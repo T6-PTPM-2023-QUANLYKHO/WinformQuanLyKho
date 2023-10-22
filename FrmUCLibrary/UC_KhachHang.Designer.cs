@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_KhachHang));
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_lamMoi = new System.Windows.Forms.Button();
@@ -76,12 +77,14 @@
             this.panel2.Controls.Add(this.btn__Them);
             this.panel2.Location = new System.Drawing.Point(3, 464);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1030, 55);
+            this.panel2.Size = new System.Drawing.Size(1172, 55);
             this.panel2.TabIndex = 13;
             // 
             // btn_lamMoi
             // 
             this.btn_lamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_lamMoi.Image")));
+            this.btn_lamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_lamMoi.Location = new System.Drawing.Point(634, 3);
             this.btn_lamMoi.Name = "btn_lamMoi";
             this.btn_lamMoi.Size = new System.Drawing.Size(172, 36);
@@ -93,6 +96,8 @@
             // btn_Sua
             // 
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
+            this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Sua.Location = new System.Drawing.Point(427, 3);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(172, 36);
@@ -104,6 +109,8 @@
             // btn_Xoa
             // 
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
+            this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Xoa.Location = new System.Drawing.Point(220, 3);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(172, 36);
@@ -115,6 +122,8 @@
             // btn__Them
             // 
             this.btn__Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__Them.Image = ((System.Drawing.Image)(resources.GetObject("btn__Them.Image")));
+            this.btn__Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn__Them.Location = new System.Drawing.Point(13, 3);
             this.btn__Them.Name = "btn__Them";
             this.btn__Them.Size = new System.Drawing.Size(172, 36);
@@ -128,7 +137,7 @@
             this.panel_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_DataGridView.Location = new System.Drawing.Point(3, 176);
             this.panel_DataGridView.Name = "panel_DataGridView";
-            this.panel_DataGridView.Size = new System.Drawing.Size(1030, 282);
+            this.panel_DataGridView.Size = new System.Drawing.Size(1172, 282);
             this.panel_DataGridView.TabIndex = 14;
             // 
             // label1
@@ -150,11 +159,14 @@
             // 
             // btn_search
             // 
+            this.btn_search.Image = global::FrmUCLibrary.Properties.Resources.search;
+            this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_search.Location = new System.Drawing.Point(822, 53);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(78, 25);
             this.btn_search.TabIndex = 3;
             this.btn_search.Text = "Tìm kiếm";
+            this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_search.UseVisualStyleBackColor = true;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
@@ -288,11 +300,14 @@
             // 
             // btn_ShowAll
             // 
+            this.btn_ShowAll.Image = global::FrmUCLibrary.Properties.Resources.checklist;
+            this.btn_ShowAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ShowAll.Location = new System.Drawing.Point(706, 53);
             this.btn_ShowAll.Name = "btn_ShowAll";
             this.btn_ShowAll.Size = new System.Drawing.Size(100, 25);
             this.btn_ShowAll.TabIndex = 17;
             this.btn_ShowAll.Text = "Hiển thị tất cả";
+            this.btn_ShowAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ShowAll.UseVisualStyleBackColor = true;
             this.btn_ShowAll.Click += new System.EventHandler(this.btn_ShowAll_Click);
             // 

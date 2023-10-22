@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_NhaCungCap));
             this.panel_DataGridViewNCC = new System.Windows.Forms.FlowLayoutPanel();
             this.panelTT_NCC = new System.Windows.Forms.Panel();
             this.btn_Reload = new System.Windows.Forms.Button();
@@ -78,9 +79,11 @@
             // 
             // btn_Reload
             // 
-            this.btn_Reload.Location = new System.Drawing.Point(617, 52);
+            this.btn_Reload.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reload.Image")));
+            this.btn_Reload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reload.Location = new System.Drawing.Point(691, 46);
             this.btn_Reload.Name = "btn_Reload";
-            this.btn_Reload.Size = new System.Drawing.Size(75, 23);
+            this.btn_Reload.Size = new System.Drawing.Size(105, 35);
             this.btn_Reload.TabIndex = 14;
             this.btn_Reload.Text = "Reset";
             this.btn_Reload.UseVisualStyleBackColor = true;
@@ -88,9 +91,10 @@
             // 
             // txt_SDT
             // 
+            this.txt_SDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SDT.Location = new System.Drawing.Point(592, 8);
             this.txt_SDT.Name = "txt_SDT";
-            this.txt_SDT.Size = new System.Drawing.Size(100, 20);
+            this.txt_SDT.Size = new System.Drawing.Size(100, 22);
             this.txt_SDT.TabIndex = 13;
             // 
             // label4
@@ -104,16 +108,19 @@
             // 
             // txt_DiaChi
             // 
+            this.txt_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DiaChi.Location = new System.Drawing.Point(380, 8);
             this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.Size = new System.Drawing.Size(100, 20);
+            this.txt_DiaChi.Size = new System.Drawing.Size(100, 22);
             this.txt_DiaChi.TabIndex = 11;
             // 
             // btn_TimKiem
             // 
-            this.btn_TimKiem.Location = new System.Drawing.Point(455, 52);
+            this.btn_TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btn_TimKiem.Image")));
+            this.btn_TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TimKiem.Location = new System.Drawing.Point(526, 46);
             this.btn_TimKiem.Name = "btn_TimKiem";
-            this.btn_TimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btn_TimKiem.Size = new System.Drawing.Size(105, 35);
             this.btn_TimKiem.TabIndex = 10;
             this.btn_TimKiem.Text = "Tìm Kiếm";
             this.btn_TimKiem.UseVisualStyleBackColor = true;
@@ -121,9 +128,11 @@
             // 
             // btn_lammoi
             // 
-            this.btn_lammoi.Location = new System.Drawing.Point(353, 52);
+            this.btn_lammoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_lammoi.Image")));
+            this.btn_lammoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_lammoi.Location = new System.Drawing.Point(403, 46);
             this.btn_lammoi.Name = "btn_lammoi";
-            this.btn_lammoi.Size = new System.Drawing.Size(75, 23);
+            this.btn_lammoi.Size = new System.Drawing.Size(105, 35);
             this.btn_lammoi.TabIndex = 9;
             this.btn_lammoi.Text = "Làm mới";
             this.btn_lammoi.UseVisualStyleBackColor = true;
@@ -131,9 +140,11 @@
             // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(254, 52);
+            this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
+            this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sua.Location = new System.Drawing.Point(281, 46);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(75, 23);
+            this.btn_Sua.Size = new System.Drawing.Size(105, 35);
             this.btn_Sua.TabIndex = 8;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
@@ -141,12 +152,15 @@
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.Location = new System.Drawing.Point(167, 52);
+            this.btn_Xoa.BackColor = System.Drawing.Color.RosyBrown;
+            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
+            this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Xoa.Location = new System.Drawing.Point(159, 46);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(75, 23);
+            this.btn_Xoa.Size = new System.Drawing.Size(105, 35);
             this.btn_Xoa.TabIndex = 7;
             this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.UseVisualStyleBackColor = false;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // label3
@@ -160,9 +174,10 @@
             // 
             // txt_Ten
             // 
+            this.txt_Ten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Ten.Location = new System.Drawing.Point(199, 8);
             this.txt_Ten.Name = "txt_Ten";
-            this.txt_Ten.Size = new System.Drawing.Size(100, 20);
+            this.txt_Ten.Size = new System.Drawing.Size(100, 22);
             this.txt_Ten.TabIndex = 3;
             // 
             // label2
@@ -177,9 +192,10 @@
             // txt_Ma
             // 
             this.txt_Ma.AcceptsReturn = true;
+            this.txt_Ma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Ma.Location = new System.Drawing.Point(42, 8);
             this.txt_Ma.Name = "txt_Ma";
-            this.txt_Ma.Size = new System.Drawing.Size(100, 20);
+            this.txt_Ma.Size = new System.Drawing.Size(100, 22);
             this.txt_Ma.TabIndex = 1;
             // 
             // label1
@@ -193,14 +209,15 @@
             // 
             // btn_Them
             // 
-            this.btn_Them.Image = global::FrmUCLibrary.Properties.Resources.icons8_plus_26;
+            this.btn_Them.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.Image")));
             this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Them.Location = new System.Drawing.Point(17, 40);
+            this.btn_Them.Location = new System.Drawing.Point(37, 46);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(105, 35);
             this.btn_Them.TabIndex = 6;
             this.btn_Them.Text = "Thêm ";
-            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.UseVisualStyleBackColor = false;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // UC_NhaCungCap
