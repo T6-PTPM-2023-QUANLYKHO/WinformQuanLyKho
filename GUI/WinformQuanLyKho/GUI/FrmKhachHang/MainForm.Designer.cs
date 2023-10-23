@@ -71,6 +71,10 @@
             // 
             this.cậpNhậtThôngTinToolStripMenuItem.Name = "cậpNhậtThôngTinToolStripMenuItem";
             this.cậpNhậtThôngTinToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+<<<<<<< HEAD
+=======
+            this.cậpNhậtThôngTinToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+>>>>>>> vanhien
             this.cậpNhậtThôngTinToolStripMenuItem.Text = "Danh sách khách hàng";
             this.cậpNhậtThôngTinToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtThôngTinToolStripMenuItem_Click_1);
             // 
