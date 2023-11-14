@@ -47,6 +47,7 @@
     <Compile Include="XuLyKhachHangModel.cs" />
     <Compile Include="XuLyLoaiSanPhamModel.cs" />
     <Compile Include="XuLyNhaCungCapModel.cs" />
+    <Compile Include="XuLyNhanVienModel.cs" />
     <Compile Include="XuLyPhieuXuatModel.cs" />
     <Compile Include="XuLySanPhamModel.cs" />
   </ItemGroup>

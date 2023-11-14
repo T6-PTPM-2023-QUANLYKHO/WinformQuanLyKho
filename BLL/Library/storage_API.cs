@@ -18,15 +18,24 @@ namespace Library
             private string _deleteKhachHang =host+ @"/api/khach-hang/remove-by-ma-khach-hang";
             private string _insertKhachHang = host + "/api/khach-hang/add-item";
             private string _updateKhachHang = host + @"/api/khach-hang/update";
+            //Nhân viên
+            private string _getAllNV = host + @"/api/nhan-vien/get-all";
+            private string _getNVbyID = host + @"/api/nhan-vien/get-by-id/";
+            private string _deleteNV = host + @"api/nhan-vien/remove-by-manhanvien/";
+            private string _insertNV = host + "/api/nhan-vien/add-item";
+            private string _updateNV = host + @"/api/nhan-vien/update/";
+            //sản phẩm
+            private string _getAllSanPham = host + @"/api/San-pham/get-all";
+            private string _getSPById = host + @"/api/San-pham/get-by-id/";
+            private string _deleteSP = host + @"api/San-pham/remove-by-ma-San-Pham/";
+            private string _insertSP = host + "/api/San-pham/add-item";
+            private string _updateSP = host + @"/api/San-pham/update";
             //Nhà cung cấp
             private string _getAllNhaCungCap = host +@"/api/nha-cung-cap/get-all";
             private string _insertNhaCungCap = host + @"/api/nha-cung-cap/add-item";
             private string _deleteNhaCungCap = host + @"/api/nha-cung-cap/remove-by-maphieu";
             private string _updateNhaCungCap = host + @"/api/nha-cung-cap/update";
             private string _timKiemNhaCungCapSDT = host + @"/api/nha-cung-cap/get-by-sdt";
-            //sản phẩm
-            private string _getAllSanPham = host + @"/api/San-pham/get-all";
-            private string _getSPById = host + @"/api/San-pham/get-by-id/";
             //Loại sản phẩm
             private string _getAllLoaiSP = host + @"/api/loai-sp/get-all";
             //Phiếu Xuất Hàng
@@ -132,7 +141,48 @@ namespace Library
                 get { return _updateKhachHang; }
                 set { }
             }
-            
+            // SANG
+            public string _GetAllNV
+            {
+                get { return _getAllNV; }
+                set { }
+            }
+            public string _GetNVbyID
+            {
+                get { return _getNVbyID; }
+                set { }
+            }
+            public string _DeleteNV
+            {
+                get { return _deleteNV; }
+                set { }
+            }
+            public string _InsertNV
+            {
+                get { return _insertNV; }
+                set { }
+            }
+            public string _UpdateNV
+            {
+                get { return _updateNV; }
+                set { }
+            }
+            public string _DeleteSP
+            {
+                get { return _deleteSP; }
+                set { }
+            }
+            public string _InsertSP
+            {
+                get { return _insertSP; }
+                set { }
+            }
+            public string _UpdateSP
+            {
+                get { return _updateSP; }
+                set { }
+            }
+            // SANG
         }
     }
 }

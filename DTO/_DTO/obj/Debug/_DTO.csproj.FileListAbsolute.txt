@@ -9,3 +9,4 @@ F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongM
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.CoreCompileInputs.cache
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.dll
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.AssemblyReference.cache

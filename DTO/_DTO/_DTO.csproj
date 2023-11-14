@@ -45,6 +45,7 @@
     <Compile Include="KhachHangModel.cs" />
     <Compile Include="LoaiSanPhamModel.cs" />
     <Compile Include="NhaCungCapModel.cs" />
+    <Compile Include="NhanVienModel.cs" />
     <Compile Include="PhieuXuatModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamModel.cs" />
