@@ -86,7 +86,7 @@ namespace _DTO
             get; set;
         }
 
-        public string EmailNV
+        public string Email
         {
             get; set;
         }
@@ -116,7 +116,7 @@ namespace _DTO
             get; set;
         }
 
-        public string MaChucVu
+        public string ChucVu
         {
             get; set;
         }

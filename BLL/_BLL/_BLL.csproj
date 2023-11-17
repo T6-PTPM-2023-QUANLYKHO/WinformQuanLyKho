@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XuLyChiTietPhieuXuatModel.cs" />
+    <Compile Include="XuLyChucVuModel.cs" />
     <Compile Include="XuLyKhachHangModel.cs" />
     <Compile Include="XuLyLoaiSanPhamModel.cs" />
     <Compile Include="XuLyNhaCungCapModel.cs" />

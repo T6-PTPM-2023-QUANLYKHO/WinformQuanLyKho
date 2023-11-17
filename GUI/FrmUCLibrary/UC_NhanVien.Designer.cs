@@ -38,7 +38,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTenTimKiem = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbLoaiTimKiem = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.cboLoaiTimKiem = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,7 +46,6 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtLuong = new System.Windows.Forms.TextBox();
-            this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.cboBoPhan = new System.Windows.Forms.ComboBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -81,6 +81,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dgvNhanVien
             // 
@@ -95,6 +96,7 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(1575, 338);
             this.dgvNhanVien.TabIndex = 2;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // tableLayoutPanel1
             // 
@@ -132,6 +134,7 @@
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
@@ -143,6 +146,7 @@
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -154,6 +158,7 @@
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // groupBox1
             // 
@@ -174,7 +179,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.txtTenTimKiem, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label12, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lbLoaiTimKiem, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.btnTimKiem, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.cboLoaiTimKiem, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -208,17 +213,17 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Tìm Kiếm Theo";
             // 
-            // label12
+            // lbLoaiTimKiem
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 80);
-            this.label12.Name = "label12";
-            this.label12.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.label12.Size = new System.Drawing.Size(169, 20);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "None";
+            this.lbLoaiTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbLoaiTimKiem.AutoSize = true;
+            this.lbLoaiTimKiem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLoaiTimKiem.Location = new System.Drawing.Point(3, 80);
+            this.lbLoaiTimKiem.Name = "lbLoaiTimKiem";
+            this.lbLoaiTimKiem.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.lbLoaiTimKiem.Size = new System.Drawing.Size(169, 20);
+            this.lbLoaiTimKiem.TabIndex = 11;
+            this.lbLoaiTimKiem.Text = "None";
             // 
             // btnTimKiem
             // 
@@ -231,16 +236,22 @@
             this.btnTimKiem.TabIndex = 12;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // cboLoaiTimKiem
             // 
             this.cboLoaiTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboLoaiTimKiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoaiTimKiem.FormattingEnabled = true;
+            this.cboLoaiTimKiem.Items.AddRange(new object[] {
+            "None",
+            "Mã nhân viên",
+            "Số điện thoại"});
             this.cboLoaiTimKiem.Location = new System.Drawing.Point(178, 16);
             this.cboLoaiTimKiem.Name = "cboLoaiTimKiem";
             this.cboLoaiTimKiem.Size = new System.Drawing.Size(203, 27);
             this.cboLoaiTimKiem.TabIndex = 13;
+            this.cboLoaiTimKiem.SelectedIndexChanged += new System.EventHandler(this.cboLoaiTimKiem_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -267,7 +278,6 @@
             this.tableLayoutPanel2.Controls.Add(this.txtSDT, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtEmail, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtLuong, 5, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtGioiTinh, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtTenNV, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtDiaChi, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
@@ -284,6 +294,7 @@
             this.tableLayoutPanel2.Controls.Add(this.cboBoPhan, 5, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtMaNV, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.dtpNgaySinh, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cboGioiTinh, 3, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 23);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -321,15 +332,6 @@
             this.txtLuong.Name = "txtLuong";
             this.txtLuong.Size = new System.Drawing.Size(234, 27);
             this.txtLuong.TabIndex = 17;
-            // 
-            // txtGioiTinh
-            // 
-            this.txtGioiTinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGioiTinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(547, 54);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(233, 27);
-            this.txtGioiTinh.TabIndex = 16;
             // 
             // txtTenNV
             // 
@@ -481,6 +483,10 @@
             this.cboBoPhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboBoPhan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBoPhan.FormattingEnabled = true;
+            this.cboBoPhan.Items.AddRange(new object[] {
+            "KIỂM HÀNG",
+            "NHẬP HÀNG",
+            "XUẤT HÀNG"});
             this.cboBoPhan.Location = new System.Drawing.Point(936, 99);
             this.cboBoPhan.Name = "cboBoPhan";
             this.cboBoPhan.Size = new System.Drawing.Size(234, 27);
@@ -503,6 +509,19 @@
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(233, 27);
             this.dtpNgaySinh.TabIndex = 20;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboGioiTinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGioiTinh.Location = new System.Drawing.Point(547, 54);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(233, 27);
+            this.cboGioiTinh.TabIndex = 21;
             // 
             // UC_NhanVien
             // 
@@ -534,7 +553,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TextBox txtTenTimKiem;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbLoaiTimKiem;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.ComboBox cboLoaiTimKiem;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -542,7 +561,6 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtLuong;
-        private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label1;
@@ -559,5 +577,6 @@
         private System.Windows.Forms.ComboBox cboBoPhan;
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.ComboBox cboGioiTinh;
     }
 }

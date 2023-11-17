@@ -21,6 +21,7 @@ namespace Library
             //Nhân viên
             private string _getAllNV = host + @"/api/nhan-vien/get-all";
             private string _getNVbyID = host + @"/api/nhan-vien/get-by-id/";
+            private string _getNVbySdt = host + @"/api/nhan-vien/get-by-sdt/";
             private string _deleteNV = host + @"api/nhan-vien/remove-by-manhanvien/";
             private string _insertNV = host + "/api/nhan-vien/add-item";
             private string _updateNV = host + @"/api/nhan-vien/update/";
@@ -30,6 +31,12 @@ namespace Library
             private string _deleteSP = host + @"api/San-pham/remove-by-ma-San-Pham/";
             private string _insertSP = host + "/api/San-pham/add-item";
             private string _updateSP = host + @"/api/San-pham/update";
+            //Chức vụ
+            private string _getAllChucVu = host + @"/api/chuc-vu/get-all";
+            private string _getCVById = host + @"/api/chuc-vu/get-by-id/";
+            private string _deleteCV = host + @"api/chuc-vu/remove-by-ma_chuc_vu/";
+            private string _insertCV = host + "/api/chuc-vu/add-item";
+            private string _updateCV = host + @"/api/chuc-vu/update/";
             //Nhà cung cấp
             private string _getAllNhaCungCap = host +@"/api/nha-cung-cap/get-all";
             private string _insertNhaCungCap = host + @"/api/nha-cung-cap/add-item";
@@ -152,6 +159,11 @@ namespace Library
                 get { return _getNVbyID; }
                 set { }
             }
+            public string _GetNVbySdt
+            {
+                get { return _getNVbySdt; }
+                set { }
+            }
             public string _DeleteNV
             {
                 get { return _deleteNV; }
@@ -180,6 +192,31 @@ namespace Library
             public string _UpdateSP
             {
                 get { return _updateSP; }
+                set { }
+            }
+            public string _GetAllCV
+            {
+                get { return _getAllChucVu; }
+                set { }
+            }
+            public string _GetCVbyID
+            {
+                get { return _getCVById; }
+                set { }
+            }
+            public string _DeleteCV
+            {
+                get { return _deleteCV; }
+                set { }
+            }
+            public string _InsertCV
+            {
+                get { return _insertCV; }
+                set { }
+            }
+            public string _UpdateCV
+            {
+                get { return _updateCV; }
                 set { }
             }
             // SANG
