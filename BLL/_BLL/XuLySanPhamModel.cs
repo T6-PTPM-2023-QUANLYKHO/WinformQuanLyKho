@@ -27,5 +27,38 @@ namespace _BLL
             SanPhamModel sp = JsonConvert.DeserializeObject<SanPhamModel>(json);
             return sp;
         }
+        public async Task<List<ThongKeSpModel>> ThongKeSLNhap(DateTime ngaybd, DateTime ngaykt)
+        {
+            // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
+            string url = api.getThongKeNhapHang + "?ngaybd=" + ngaybd.ToString("yyyy-MM-dd") + "&ngaykt=" + ngaykt.ToString("yyyy-MM-dd");
+            string json = await lib.getData(url);
+            List<ThongKeSpModel> lst = JsonConvert.DeserializeObject<List<ThongKeSpModel>>(json);
+            return lst;
+        }
+        public async Task<List<ThongKeSpModel>> ThongKeTon(DateTime ngaybd, DateTime ngaykt)
+        {
+            // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
+            string url = api.getThongKeTonKho + "?ngaybd=" + ngaybd.ToString("yyyy-MM-dd") + "&ngaykt=" + ngaykt.ToString("yyyy-MM-dd");
+            string json = await lib.getData(url);
+            List<ThongKeSpModel> lst = JsonConvert.DeserializeObject<List<ThongKeSpModel>>(json);
+            return lst;
+        }
+        public async Task<List<ThongKeSpModel>> ThongKeBan(DateTime ngaybd, DateTime ngaykt)
+        {
+            // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
+            string url = api.getThongKeXuatHang + "?ngaybd=" + ngaybd.ToString("yyyy-MM-dd") + "&ngaykt=" + ngaykt.ToString("yyyy-MM-dd");
+            string json = await lib.getData(url);
+            List<ThongKeSpModel> lst = JsonConvert.DeserializeObject<List<ThongKeSpModel>>(json);
+            return lst;
+        }
+        public async Task<List<SanPhamModel>> ThongKeDate(DateTime ngaybd, DateTime ngaykt)
+        {
+            // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
+            string url = api.getThongKeDate + "?ngaybd=" + ngaybd.ToString("yyyy-MM-dd") + "&ngaykt=" + ngaykt.ToString("yyyy-MM-dd");
+            string json = await lib.getData(url);
+            List<SanPhamModel> lst = JsonConvert.DeserializeObject<List<SanPhamModel>>(json);
+            return lst;
+        }
+
     }
 }

@@ -11,6 +11,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,8 +39,16 @@
     <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -58,6 +68,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_KE_KHU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_KE_KHU.Designer.cs">
+      <DependentUpon>UC_KE_KHU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PhanQuyenNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PhanQuyenNguoiDung.Designer.cs">
+      <DependentUpon>UC_PhanQuyenNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_QUENMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_QUENMK.Designer.cs">
+      <DependentUpon>UC_QUENMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DANGKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_DANGKY.Designer.cs">
+      <DependentUpon>UC_DANGKY.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
@@ -90,6 +124,12 @@
     <Compile Include="UC_SanPham.Designer.cs">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_THONGKE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_THONGKE.Designer.cs">
+      <DependentUpon>UC_THONGKE.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +137,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_KE_KHU.resx">
+      <DependentUpon>UC_KE_KHU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PhanQuyenNguoiDung.resx">
+      <DependentUpon>UC_PhanQuyenNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_QUENMK.resx">
+      <DependentUpon>UC_QUENMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DANGKY.resx">
+      <DependentUpon>UC_DANGKY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
@@ -112,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_THONGKE.resx">
+      <DependentUpon>UC_THONGKE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

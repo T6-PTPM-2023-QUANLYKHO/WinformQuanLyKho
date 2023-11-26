@@ -29,7 +29,8 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             mainContent.Height = chieudai-menuStrip1.Height;
         }
         private void tạoPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        { 
+        {
+          
             mainContent.Controls.Clear();
             UC_PhieuXuatHang ucPhieuXuatHang = new UC_PhieuXuatHang();
             mainContent.Controls.Add(ucPhieuXuatHang);
@@ -54,6 +55,27 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             mainContent.Controls.Clear();
             UC_SanPham ucSP = new UC_SanPham();
             mainContent.Controls.Add(ucSP);
+        }
+
+        private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_THONGKE ucTC = new UC_THONGKE();
+            mainContent.Controls.Add(ucTC);
+        }
+
+        private void khuVàKệToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_KE_KHU ucKK = new UC_KE_KHU();
+            mainContent.Controls.Add(ucKK);
+        }
+
+        private void phânQuyềnNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_PhanQuyenNguoiDung ucPQ = new UC_PhanQuyenNguoiDung();
+            mainContent.Controls.Add(ucPQ);
         }
     }
 }

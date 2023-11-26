@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,7 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,8 +57,14 @@
     <Compile Include="XuLyKhachHangModel.cs" />
     <Compile Include="XuLyLoaiSanPhamModel.cs" />
     <Compile Include="XuLyNhaCungCapModel.cs" />
+    <Compile Include="XuLyNhomNguoiDung.cs" />
+    <Compile Include="XuLyPhanQuyen.cs" />
     <Compile Include="XuLyPhieuXuatModel.cs" />
     <Compile Include="XuLySanPhamModel.cs" />
+    <Compile Include="XuLyTaiKhoanNhanVien.cs" />
+    <Compile Include="XyLyDangNhapModel.cs" />
+    <Compile Include="XyLyKeKhuModel.cs" />
+    <Compile Include="XyLyManHinhModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DTO\_DTO\_DTO.csproj">
@@ -59,6 +75,9 @@
       <Project>{0967cf23-d904-4335-9ae2-253955d378df}</Project>
       <Name>Library</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
