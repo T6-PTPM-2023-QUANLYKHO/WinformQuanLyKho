@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
 using FrmUCLibrary;
+using WinformQuanLyKho.GUI.Report;
 
 namespace WinformQuanLyKho.GUI.FrmKhachHang
 {
@@ -54,6 +55,15 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             mainContent.Controls.Clear();
             UC_SanPham ucSP = new UC_SanPham();
             mainContent.Controls.Add(ucSP);
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = this;
+            f.Hide();
+            Frm_ThongKe frmThongKe = new Frm_ThongKe();
+            frmThongKe.ShowDialog();
+            f.Show();
         }
     }
 }

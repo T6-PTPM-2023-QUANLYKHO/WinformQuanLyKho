@@ -37,3 +37,6 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.GUI.Report.Frm_ThongKe.resources

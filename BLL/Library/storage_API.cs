@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,17 +11,18 @@ namespace Library
 {
     public static class storage_API
     {
+        public const string host = @"https://localhost:7202";
         public class API_KhachHang
         {
             private static string host = @"https://localhost:7202";
             //khách hàng
-            private string _getAllKH = host+@"/api/khach-hang/get-all";
-            private string _getKHBySDT = host+@"/api/khach-hang/get-by-sdt/";
-            private string _deleteKhachHang =host+ @"/api/khach-hang/remove-by-ma-khach-hang";
+            private string _getAllKH = host + @"/api/khach-hang/get-all";
+            private string _getKHBySDT = host + @"/api/khach-hang/get-by-sdt/";
+            private string _deleteKhachHang = host + @"/api/khach-hang/remove-by-ma-khach-hang";
             private string _insertKhachHang = host + "/api/khach-hang/add-item";
             private string _updateKhachHang = host + @"/api/khach-hang/update";
             //Nhà cung cấp
-            private string _getAllNhaCungCap = host +@"/api/nha-cung-cap/get-all";
+            private string _getAllNhaCungCap = host + @"/api/nha-cung-cap/get-all";
             private string _insertNhaCungCap = host + @"/api/nha-cung-cap/add-item";
             private string _deleteNhaCungCap = host + @"/api/nha-cung-cap/remove-by-maphieu";
             private string _updateNhaCungCap = host + @"/api/nha-cung-cap/update";
@@ -32,11 +35,25 @@ namespace Library
             //Phiếu Xuất Hàng
             private string _getAllPhieuXuat = host + @"/api/phieu-xuat-hang/get-all";
             private string _addPhieuXuat = host + @"/api/phieu-xuat-hang/add-item";
-            private string _deletePhieuXuat = host + @"/api/phieu-xuat-hang/remove-by-maphieuxh/";
+            private string _deletePhieuXuat = host + @"/api/phieu-xuat-hang/remove-by-maphieuxh";
+            private string _getPhieuXuatSoNgay = host + @"/api/phieu-xuat-hang/thong-ke-so-ngay";
             //Chi tiết xuất hàng
             private string _insertCTXuatHang = host + @"/api/chi-tiet-xuat-hang/add-item";
-            private string _deleteCTPhieuXuatMaPh = host + @"/api/chi-tiet-xuat-hang/remove/";
+            private string _deleteCTPhieuXuatMaPh = host + @"/api/chi-tiet-xuat-hang/remove";
             private string _getCTPhieuXuatByMaPhieu = host + @"/api/chi-tiet-xuat-hang/get-by-id/";
+            //phiêu nhập hàng Hiền
+            private string _getPhieuNhapSoNgay = host + @"/api/phieu-nhap-hang/get-phieu-nhap-so-ngay/";
+           
+            public string getPhieuNhapSoNgay
+            {
+                get { return _getPhieuNhapSoNgay; }
+                set { _getPhieuNhapSoNgay = value; }
+            }
+            public string getPhieuXuatSoNgay
+            {
+                get { return _getPhieuXuatSoNgay; }
+                set { _getPhieuXuatSoNgay = value; }
+            }
             public string getCTPhieuXuatByMaPhieu
             {
                 get { return _getCTPhieuXuatByMaPhieu; }
@@ -104,8 +121,8 @@ namespace Library
             }
             public string getAllNhaCungCap
             {
-                get { return _getAllNhaCungCap;}
-                set {  _getAllNhaCungCap = value;}
+                get { return _getAllNhaCungCap; }
+                set { _getAllNhaCungCap = value; }
             }
             public string getAllKH
             {
@@ -132,7 +149,23 @@ namespace Library
                 get { return _updateKhachHang; }
                 set { }
             }
-            
+
+        }
+        public class thongke
+        {
+            //thống kê 
+            private string _thongKePhieuNhap = host + @"/api/thong-ke/get-phieu-nhap-theo-ngay/";
+            private string _thongkePhieuXuat = host + @"/api/thong-ke/get-phieu-xuat-theo-ngay/";
+            public string thongkePhieuXuat
+            {
+                get { return _thongkePhieuXuat; }
+                set { _thongkePhieuXuat = value; }
+            }
+            public string thongKePhieuNhap
+            {
+                get { return _thongKePhieuNhap; }
+                set { _thongKePhieuNhap = value; }
+            }
         }
     }
 }

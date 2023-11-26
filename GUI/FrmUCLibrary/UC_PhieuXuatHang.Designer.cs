@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.grp_TT_PhieuXuat = new System.Windows.Forms.GroupBox();
+            this.btnLuuPhieuXuat = new System.Windows.Forms.Button();
+            this.btnXoaPhieuXuat = new System.Windows.Forms.Button();
+            this.btnTaoPhieuXuat = new System.Windows.Forms.Button();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
@@ -60,6 +63,7 @@
             this.groupTTSanPham = new System.Windows.Forms.GroupBox();
             this.grpTTCTPhieuXuat = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -67,13 +71,10 @@
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.groupDSPhieuXuat = new System.Windows.Forms.GroupBox();
+            this.btnInPhieu = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnLuuPhieuXuat = new System.Windows.Forms.Button();
-            this.btnXoaPhieuXuat = new System.Windows.Forms.Button();
-            this.btnTaoPhieuXuat = new System.Windows.Forms.Button();
             this.grp_TT_PhieuXuat.SuspendLayout();
             this.grp_TT_CTPhieuXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSL)).BeginInit();
@@ -104,6 +105,46 @@
             this.grp_TT_PhieuXuat.TabStop = false;
             this.grp_TT_PhieuXuat.Text = "Thông tin phiếu xuất";
             // 
+            // btnLuuPhieuXuat
+            // 
+            this.btnLuuPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLuuPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.save;
+            this.btnLuuPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuuPhieuXuat.Location = new System.Drawing.Point(315, 47);
+            this.btnLuuPhieuXuat.Name = "btnLuuPhieuXuat";
+            this.btnLuuPhieuXuat.Size = new System.Drawing.Size(82, 27);
+            this.btnLuuPhieuXuat.TabIndex = 25;
+            this.btnLuuPhieuXuat.Text = "Lưu";
+            this.btnLuuPhieuXuat.UseVisualStyleBackColor = true;
+            this.btnLuuPhieuXuat.Click += new System.EventHandler(this.btnLuuPhieuXuat_Click);
+            // 
+            // btnXoaPhieuXuat
+            // 
+            this.btnXoaPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnXoaPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.remove;
+            this.btnXoaPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaPhieuXuat.Location = new System.Drawing.Point(205, 47);
+            this.btnXoaPhieuXuat.Name = "btnXoaPhieuXuat";
+            this.btnXoaPhieuXuat.Size = new System.Drawing.Size(82, 27);
+            this.btnXoaPhieuXuat.TabIndex = 24;
+            this.btnXoaPhieuXuat.Text = "Xóa";
+            this.btnXoaPhieuXuat.UseVisualStyleBackColor = true;
+            this.btnXoaPhieuXuat.Click += new System.EventHandler(this.btnXoaPhieuXuat_Click);
+            // 
+            // btnTaoPhieuXuat
+            // 
+            this.btnTaoPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTaoPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.plus;
+            this.btnTaoPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoPhieuXuat.Location = new System.Drawing.Point(95, 47);
+            this.btnTaoPhieuXuat.Name = "btnTaoPhieuXuat";
+            this.btnTaoPhieuXuat.Size = new System.Drawing.Size(82, 27);
+            this.btnTaoPhieuXuat.TabIndex = 23;
+            this.btnTaoPhieuXuat.Text = "Tạo mới";
+            this.btnTaoPhieuXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTaoPhieuXuat.UseVisualStyleBackColor = true;
+            this.btnTaoPhieuXuat.Click += new System.EventHandler(this.btnTaoPhieuXuat_Click);
+            // 
             // txtMaKH
             // 
             this.txtMaKH.Location = new System.Drawing.Point(328, 20);
@@ -115,7 +156,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(234, 27);
+            this.label6.Location = new System.Drawing.Point(234, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 13);
             this.label6.TabIndex = 8;
@@ -123,7 +164,7 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.Location = new System.Drawing.Point(535, 22);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(537, 19);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.ReadOnly = true;
             this.txtMaNhanVien.Size = new System.Drawing.Size(100, 20);
@@ -132,7 +173,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(456, 27);
+            this.label5.Location = new System.Drawing.Point(459, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 6;
@@ -140,7 +181,7 @@
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(1028, 24);
+            this.txtTongTien.Location = new System.Drawing.Point(981, 21);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.ReadOnly = true;
             this.txtTongTien.Size = new System.Drawing.Size(116, 20);
@@ -149,7 +190,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(935, 27);
+            this.label4.Location = new System.Drawing.Point(888, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 4;
@@ -157,15 +198,16 @@
             // 
             // dateTimePicker_NgayXuatPhieu
             // 
-            this.dateTimePicker_NgayXuatPhieu.Location = new System.Drawing.Point(710, 24);
+            this.dateTimePicker_NgayXuatPhieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_NgayXuatPhieu.Location = new System.Drawing.Point(714, 20);
             this.dateTimePicker_NgayXuatPhieu.Name = "dateTimePicker_NgayXuatPhieu";
-            this.dateTimePicker_NgayXuatPhieu.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_NgayXuatPhieu.Size = new System.Drawing.Size(90, 20);
             this.dateTimePicker_NgayXuatPhieu.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(643, 27);
+            this.label3.Location = new System.Drawing.Point(643, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
@@ -182,7 +224,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Location = new System.Drawing.Point(15, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 0;
@@ -246,7 +288,7 @@
             // 
             this.txtSL.Location = new System.Drawing.Point(527, 21);
             this.txtSL.Name = "txtSL";
-            this.txtSL.Size = new System.Drawing.Size(53, 20);
+            this.txtSL.Size = new System.Drawing.Size(78, 20);
             this.txtSL.TabIndex = 15;
             this.txtSL.Value = new decimal(new int[] {
             1,
@@ -382,6 +424,20 @@
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thông tin khách hàng";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTimKiem.BackgroundImage = global::FrmUCLibrary.Properties.Resources.search;
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTimKiem.Location = new System.Drawing.Point(505, 16);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(108, 23);
+            this.btnTimKiem.TabIndex = 21;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTenKH
             // 
@@ -397,6 +453,7 @@
             this.txtSDT.Size = new System.Drawing.Size(120, 20);
             this.txtSDT.TabIndex = 7;
             this.txtSDT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox12_KeyDown);
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // label13
             // 
@@ -425,6 +482,20 @@
             this.groupDSPhieuXuat.TabStop = false;
             this.groupDSPhieuXuat.Text = "Danh sách phiếu xuất";
             // 
+            // btnInPhieu
+            // 
+            this.btnInPhieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInPhieu.Image = global::FrmUCLibrary.Properties.Resources.printing_16;
+            this.btnInPhieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInPhieu.Location = new System.Drawing.Point(856, 404);
+            this.btnInPhieu.Name = "btnInPhieu";
+            this.btnInPhieu.Size = new System.Drawing.Size(85, 30);
+            this.btnInPhieu.TabIndex = 23;
+            this.btnInPhieu.Text = "In phiếu";
+            this.btnInPhieu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInPhieu.UseVisualStyleBackColor = true;
+            this.btnInPhieu.Click += new System.EventHandler(this.btnInPhieu_Click);
+            // 
             // btnSave
             // 
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -437,19 +508,6 @@
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.BackColor = System.Drawing.SystemColors.Control;
-            this.btnTimKiem.BackgroundImage = global::FrmUCLibrary.Properties.Resources.search;
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTimKiem.Location = new System.Drawing.Point(505, 16);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(108, 23);
-            this.btnTimKiem.TabIndex = 21;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = false;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnXoa
             // 
@@ -477,51 +535,12 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnLuuPhieuXuat
-            // 
-            this.btnLuuPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLuuPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.save;
-            this.btnLuuPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuPhieuXuat.Location = new System.Drawing.Point(315, 47);
-            this.btnLuuPhieuXuat.Name = "btnLuuPhieuXuat";
-            this.btnLuuPhieuXuat.Size = new System.Drawing.Size(82, 27);
-            this.btnLuuPhieuXuat.TabIndex = 25;
-            this.btnLuuPhieuXuat.Text = "Lưu";
-            this.btnLuuPhieuXuat.UseVisualStyleBackColor = true;
-            this.btnLuuPhieuXuat.Click += new System.EventHandler(this.btnLuuPhieuXuat_Click);
-            // 
-            // btnXoaPhieuXuat
-            // 
-            this.btnXoaPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnXoaPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.remove;
-            this.btnXoaPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaPhieuXuat.Location = new System.Drawing.Point(205, 47);
-            this.btnXoaPhieuXuat.Name = "btnXoaPhieuXuat";
-            this.btnXoaPhieuXuat.Size = new System.Drawing.Size(82, 27);
-            this.btnXoaPhieuXuat.TabIndex = 24;
-            this.btnXoaPhieuXuat.Text = "Xóa";
-            this.btnXoaPhieuXuat.UseVisualStyleBackColor = true;
-            this.btnXoaPhieuXuat.Click += new System.EventHandler(this.btnXoaPhieuXuat_Click);
-            // 
-            // btnTaoPhieuXuat
-            // 
-            this.btnTaoPhieuXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTaoPhieuXuat.Image = global::FrmUCLibrary.Properties.Resources.plus;
-            this.btnTaoPhieuXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoPhieuXuat.Location = new System.Drawing.Point(95, 47);
-            this.btnTaoPhieuXuat.Name = "btnTaoPhieuXuat";
-            this.btnTaoPhieuXuat.Size = new System.Drawing.Size(82, 27);
-            this.btnTaoPhieuXuat.TabIndex = 23;
-            this.btnTaoPhieuXuat.Text = "Tạo mới";
-            this.btnTaoPhieuXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTaoPhieuXuat.UseVisualStyleBackColor = true;
-            this.btnTaoPhieuXuat.Click += new System.EventHandler(this.btnTaoPhieuXuat_Click);
-            // 
             // UC_PhieuXuatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.btnInPhieu);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupDSPhieuXuat);
             this.Controls.Add(this.groupBox6);
@@ -596,5 +615,6 @@
         private System.Windows.Forms.Button btnTaoPhieuXuat;
         private System.Windows.Forms.GroupBox groupDSPhieuXuat;
         private System.Windows.Forms.Button btnLuuPhieuXuat;
+        private System.Windows.Forms.Button btnInPhieu;
     }
 }

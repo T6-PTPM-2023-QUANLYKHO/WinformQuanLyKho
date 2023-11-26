@@ -1,4 +1,5 @@
 ﻿using _BLL;
+using _BLL.Export;
 using _DTO;
 using Library;
 using System;
@@ -12,6 +13,8 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -200,9 +203,26 @@ namespace FrmUCLibrary
                 dataGridViewPX.Rows[rowindex].Cells["mapH_XH"].Value = item.mapH_XH;
                 dataGridViewPX.Rows[rowindex].Cells["makh"].Value = item.makh;
                 dataGridViewPX.Rows[rowindex].Cells["ngaY_XH"].Value = item.ngaY_XH;
-                dataGridViewPX.Rows[rowindex].Cells["tongtieN_XH"].Value = item.tongtieN_XH;
+                if(String.IsNullOrEmpty(item.tongtieN_XH))
+                {
+                    dataGridViewPX.Rows[rowindex].Cells["tongtieN_XH"].Value = "0";
+                }
+                else { dataGridViewPX.Rows[rowindex].Cells["tongtieN_XH"].Value = item.tongtieN_XH; }
+               
                 dataGridViewPX.Rows[rowindex].Cells["manv"].Value = item.manv;
             }
+        }
+        private async void ReLoadTTPhieuXuat()
+        {
+            CreateDataGridViewPhieuXuat();
+            string maKH = txtMaKH.Text;
+            List<PhieuXuatModel> list = null;
+            if (maKH != "" || !String.IsNullOrEmpty(maKH))
+            {
+                list = await _xuLyPhieuXuat.getAllPhieuXuatByMaKH(maKH);
+                if (list == null) { return; }
+            }
+            LoadTTPhieuXuat(list);
         }
         private void CreateDataGridViewPhieuXuat()
         {
@@ -260,7 +280,7 @@ namespace FrmUCLibrary
             try
             {
                 int index = e.RowIndex;
-                if (index < dataGridViewPX.RowCount - 2)
+                if (index <= dataGridViewPX.RowCount - 2)
                 {
                     txtMaPhieuXuat.Text = dataGridViewPX.Rows[index].Cells["mapH_XH"].Value.ToString();
                     txtMaKH.Text = dataGridViewPX.Rows[index].Cells["makh"].Value.ToString();
@@ -336,15 +356,19 @@ namespace FrmUCLibrary
 
         private void DataGridViewCTPX_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;
-            if (index < dataGridViewCTPX.RowCount - 2)
+            try
             {
-                txtMaPhieuXuat.Text = dataGridViewCTPX.Rows[index].Cells["maPhieuXH"].Value.ToString();
-                txtMaSP.Text = dataGridViewCTPX.Rows[index].Cells["maSP"].Value.ToString();
-                txtSL.Value = int.Parse(dataGridViewCTPX.Rows[index].Cells["soLuong"].Value.ToString());
-                txtThanhTien.Text = dataGridViewCTPX.Rows[index].Cells["thanhTien"].Value.ToString();
-                txtDonGia.Text = dataGridViewCTPX.Rows[index].Cells["gia"].Value.ToString();
+                int index = e.RowIndex;
+                if (index <= dataGridViewCTPX.RowCount - 2)
+                {
+                    txtMaPhieuXuat.Text = dataGridViewCTPX.Rows[index].Cells["maPhieuXH"].Value.ToString();
+                    txtMaSP.Text = dataGridViewCTPX.Rows[index].Cells["maSP"].Value.ToString();
+                    txtSL.Value = int.Parse(dataGridViewCTPX.Rows[index].Cells["soLuong"].Value.ToString());
+                    txtThanhTien.Text = dataGridViewCTPX.Rows[index].Cells["thanhTien"].Value.ToString();
+                    txtDonGia.Text = dataGridViewCTPX.Rows[index].Cells["gia"].Value.ToString();
+                }
             }
+            catch { }
         }
 
         private async void LoadComboboxLoaiSP()
@@ -509,6 +533,7 @@ namespace FrmUCLibrary
             phieu.makh = txtMaKH.Text.ToString();
             phieu.tongtieN_XH = txtTongTien.Text.ToString();
             phieu.manv = txtMaNhanVien.Text.ToString();
+            phieu.trangthai = 1; 
             return phieu;
         }
         private Boolean KT_ThongTinPhieuXuat()
@@ -535,13 +560,21 @@ namespace FrmUCLibrary
                 bool ktTonTaiPhieu =await _xuLyPhieuXuat.KT_TonTaiMaPhieuXuat(maPHXuat);
                 if(ktTonTaiPhieu == false) { ThongBao("Bạn chưa tạo phiếu xuất");return; }
                 List<CTPhieuXuatModel> listCT = await _xuLyChiTietPhieuXuat.getCTPhieuXuatByMaPhieu(maPHXuat);
+                DialogResult r = ThongBaoYesNo("Xác nhận lưu ?", "Thông báo");
+                if (r == DialogResult.No) { return; }
                 if (listCT != null)
                 {
                     _xuLyChiTietPhieuXuat.xoaChiTietPhieuXuatByMaPX(maPHXuat);
                 }
-                DialogResult r = ThongBaoYesNo("Xác nhận lưu ?", "Thông báo");
-                if (r == DialogResult.No) { return; }
-                for (int i = 0; i < dataGridViewCTPX.RowCount - 1; i++)
+                int rowcount = dataGridViewCTPX.RowCount;
+                if (rowcount == 1)
+                {
+                    //xóa tất cả chi tiết phiếu xuất
+                    int kq = await _xuLyChiTietPhieuXuat.xoaChiTietPhieuXuatByMaPX(maPHXuat);
+                    if (kq == 1) { ThongBao("Thêm thành cônng"); return; }
+                    else { ThongBao("Thất bại !"); return; }
+                }
+                for (int i = 0; i < rowcount - 1; i++)
                 {
                     CTPhieuXuatModel ct = new CTPhieuXuatModel();
                     ct.mapH_XH = dataGridViewCTPX.Rows[i].Cells["maPhieuXH"].Value.ToString();
@@ -550,13 +583,13 @@ namespace FrmUCLibrary
                     ct.thanhtien = dataGridViewCTPX.Rows[i].Cells["thanhTien"].Value.ToString();
                     ct.gia = dataGridViewCTPX.Rows[i].Cells["gia"].Value.ToString();
                     int kq = await _xuLyChiTietPhieuXuat.ThemCTPhieuXuat(ct);
+                    if(kq == 0) {  ThongBao("Thất bại"); break; }
                 }
                 ThongBao("Thêm thành cônng");
             }
             catch { ThongBao("Xảy ra lỗi"); }
            
         }
-
         private async void btnLuuPhieuXuat_Click(object sender, EventArgs e)
         {
             PhieuXuatModel phieu = new PhieuXuatModel();
@@ -571,6 +604,7 @@ namespace FrmUCLibrary
                 {
                     ThongBao("Thành công");
                     btnLuuPhieuXuat.Enabled = false;
+                    ReLoadTTPhieuXuat();
                 }
                 else
                 {
@@ -578,7 +612,6 @@ namespace FrmUCLibrary
                 }
             }
         }
-
         private async void btnXoaPhieuXuat_Click(object sender, EventArgs e)
         {
             try
@@ -595,11 +628,78 @@ namespace FrmUCLibrary
                     //xóa phiếu xuất
                     int kq = await _xuLyPhieuXuat.deletePhieuXuat(maphieuxuat);
                     if (kq == 0) { ThongBao("Xóa phiếu xuất thất bại"); }
-                    else { ThongBao("Xóa thành công"); }
+                    else { ThongBao("Xóa thành công");ReLoadTTPhieuXuat(); }
                 }
                 else { ThongBao("Xóa thất bại"); }
             }
             catch { ThongBao("Xóa thất bại"); }
+        }
+        private List<CTPhieuXuatModel> getAllDataGVValue()
+        {
+            List<CTPhieuXuatModel> lst = new List<CTPhieuXuatModel>();
+            try
+            {
+                for (int i = 0; i < dataGridViewCTPX.Rows.Count-1; i++)
+                {
+                    CTPhieuXuatModel ct = new CTPhieuXuatModel();
+                    ct.mapH_XH = dataGridViewCTPX.Rows[i].Cells["maPhieuXH"].Value.ToString();
+                    ct.mA_SP = dataGridViewCTPX.Rows[i].Cells["maSP"].Value.ToString();
+                    ct.soluong = dataGridViewCTPX.Rows[i].Cells["soLuong"].Value.ToString();
+                    ct.thanhtien = dataGridViewCTPX.Rows[i].Cells["thanhTien"].Value.ToString();
+                    ct.gia = dataGridViewCTPX.Rows[i].Cells["gia"].Value.ToString();
+                    lst.Add(ct);
+                }
+                return lst;
+            }
+            catch { return lst; }
+          
+        }
+        private async void btnInPhieu_Click(object sender, EventArgs e)
+        {
+            ExcelExport ex = new ExcelExport();
+            List<CT_TT_PhieuXuatExport> exData = new List<CT_TT_PhieuXuatExport>();
+            EXPhieuXuatModel exPX = new EXPhieuXuatModel();
+            exPX.MaKH = txtMaKH.Text;
+            exPX.HoTenKH = txtTenKH.Text;
+            exPX.DiaChiKH = "null";
+            exPX.Sdt = txtSDT.Text;
+            exPX.TongTien = txtTongTien.Text;
+            exPX.MaPhieuXuat = txtMaPhieuXuat.Text;
+            exPX.HoTenNV = "Trần Văn Hiền";
+            exPX.SoDienThoaiNV = "0513481734";
+            exPX.TongTienBangChu = Helper.ConvertNumberToWords(int.Parse(exPX.TongTien));
+            List<CTPhieuXuatModel> lstModel = getAllDataGVValue();
+            List<SanPhamModel> lstSanPham = await _xuLySanPham.getAllSP();
+            if (lstModel != null)
+            {
+                foreach (CTPhieuXuatModel item in lstModel)
+                {
+                    SanPhamModel sp = lstSanPham.Where(m => m.mA_SP.Equals(item.mA_SP)).FirstOrDefault();
+                    CT_TT_PhieuXuatExport c = new CT_TT_PhieuXuatExport();
+                    c.MaSP = item.mA_SP;
+                    c.TenSP = sp.teN_SP;
+                    c.DonGia = item.gia;
+                    c.SoLuong = item.soluong;
+                    c.ThanhTien = item.thanhtien;
+                    exData.Add(c);
+                }
+            }
+            string fileName = "PhieuXuat";
+            bool kq = ex.ExportPhieuXuat(exPX, exData, ref fileName, true);
+            if (kq == false) { ThongBao("In phiếu thất bại"); }
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtSL_ValueChanged(object sender, EventArgs e)
@@ -607,7 +707,6 @@ namespace FrmUCLibrary
             if(txtDonGia.Text=="" || String.IsNullOrEmpty(txtDonGia.Text.ToString())) { return; }
             txtThanhTien.Text = (float.Parse(txtDonGia.Text) * int.Parse( txtSL.Value.ToString())).ToString();
         }
-
         private void btnTaoPhieuXuat_Click(object sender, EventArgs e)
         {
             btnLuuPhieuXuat.Enabled = true;

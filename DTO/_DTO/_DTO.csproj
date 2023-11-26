@@ -45,9 +45,13 @@
     <Compile Include="KhachHangModel.cs" />
     <Compile Include="LoaiSanPhamModel.cs" />
     <Compile Include="NhaCungCapModel.cs" />
+    <Compile Include="EXPhieuXuatModel.cs" />
+    <Compile Include="PhieuNhap.cs" />
     <Compile Include="PhieuXuatModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamModel.cs" />
+    <Compile Include="TK_NhapHangModel.cs" />
+    <Compile Include="TK_XuatHangModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

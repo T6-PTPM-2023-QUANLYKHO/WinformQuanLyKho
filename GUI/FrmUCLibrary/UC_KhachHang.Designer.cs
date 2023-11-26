@@ -230,6 +230,7 @@
             this.txt_SoDienThoai.Name = "txt_SoDienThoai";
             this.txt_SoDienThoai.Size = new System.Drawing.Size(162, 20);
             this.txt_SoDienThoai.TabIndex = 11;
+            this.txt_SoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoDienThoai_KeyPress);
             // 
             // label8
             // 
