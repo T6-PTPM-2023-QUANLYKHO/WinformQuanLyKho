@@ -400,5 +400,13 @@ namespace FrmUCLibrary
         {
             MessageBox.Show(text,"Thông báo");
         }
+
+        private void txt_SoDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

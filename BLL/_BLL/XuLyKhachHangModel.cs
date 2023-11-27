@@ -33,12 +33,17 @@ namespace _BLL
         }
         public async Task<KhachHangModel> getKhachHangBySDT(string sdt)
         {
-            string url = api.getKHBySDT + sdt;
-            string json = await lib.getData(url);
-            if (CheckJson(json) == false) { return null; }
-            KhachHangModel listKhachHang = JsonConvert.DeserializeObject<KhachHangModel>(json);
-            if (listKhachHang != null) { return listKhachHang; }
-            return null;
+            try
+            {
+                List<KhachHangModel> lst =await  getAllKhachHang();
+                if(lst != null)
+                {
+                    KhachHangModel kh = lst.Where(m => m.SDT_KH.Equals(sdt)).FirstOrDefault();
+                    return kh;
+                }
+                return null;
+            }
+            catch { return null; }
         }       
         public async Task<int> deleteKhachHang(string makH) 
         {

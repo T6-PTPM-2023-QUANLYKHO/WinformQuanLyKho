@@ -3,6 +3,7 @@ using Library;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -52,6 +53,42 @@ namespace _BLL
         {
             string url = api.deletePhieuXuat;
             return await lib.deleteData(url, maPhieuXuat);
+        }
+        public async Task<List<PhieuXuatModel>> getPhieuXuatTheoSoNgay(int soNgay)
+        {
+            string url = api.getPhieuXuatSoNgay+"/"+soNgay;
+            string json = await lib.getData(url);
+            List<PhieuXuatModel> list = JsonConvert.DeserializeObject<List<PhieuXuatModel>>(json);
+            return list;
+        }
+        public List<PhieuXuatModel> getKyTruoc(List<PhieuXuatModel> lst)
+        {
+            try
+            {
+                int midindex = lst.Count / 2;
+                List<PhieuXuatModel> result = new List<PhieuXuatModel>();
+                for (int i = 0; i < midindex; i++)
+                {
+                    result.Add(lst[i]);
+                }
+                return result;
+            }
+            catch { return null; }
+            
+        }
+        public List<PhieuXuatModel> getHienTai(List<PhieuXuatModel> lst)
+        {
+            try
+            {
+                int midindex = lst.Count / 2;
+                List<PhieuXuatModel> result = new List<PhieuXuatModel>();
+                for (int i = midindex; i < lst.Count; i++)
+                {
+                    result.Add(lst[i]);
+                }
+                return result;
+            }
+            catch { return null; }
         }
     }
 }

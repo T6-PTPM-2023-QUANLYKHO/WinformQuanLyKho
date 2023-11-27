@@ -46,6 +46,7 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
         {
             mainContent.Controls.Clear();
             UC_NhanVien ucNV = new UC_NhanVien();
+            ucNV.Dock = DockStyle.Fill;
             mainContent.Controls.Add(ucNV);
         }
 
@@ -53,7 +54,16 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
         {
             mainContent.Controls.Clear();
             UC_SanPham ucSP = new UC_SanPham();
+            ucSP.Dock = DockStyle.Fill;
             mainContent.Controls.Add(ucSP);
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_HoaDon ucHD = new UC_HoaDon();
+            ucHD.Dock = DockStyle.Fill;
+            mainContent.Controls.Add(ucHD);
         }
     }
 }
