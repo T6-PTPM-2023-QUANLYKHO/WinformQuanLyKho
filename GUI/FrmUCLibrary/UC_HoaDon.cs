@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FrmUCLibrary
 {
-    public partial class UC_SanPham : UserControl
+    public partial class UC_HoaDon : UserControl
     {
-        public UC_SanPham()
+        public UC_HoaDon()
         {
             InitializeComponent();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -35,7 +35,31 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CopyComplete
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_NhanVien.resources
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_SanPham.resources
+<<<<<<< HEAD
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Syncfusion.XlsIO.Base.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Syncfusion.Compression.Base.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.Report.UC_TK_TongQuan.resources
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.Report.UC_TK_DoanhThu.resources
+=======
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Newtonsoft.Json.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_BLL.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_BLL.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.pdb
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.AssemblyReference.cache
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.Properties.Resources.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_KhachHang.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_NhaCungCap.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_NhanVien.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_PhieuXuatHang.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_SanPham.resources
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.GenerateResource.cache
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CoreCompileInputs.cache
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CopyComplete
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.dll
+F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_7_CNTT\LTUD_ThongMinh\DOAN\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.pdb
+>>>>>>> a01aafc155f43b65e86e10a09a5670b66c0d591b

@@ -60,18 +60,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Report\UC_TK_DoanhThu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Report\UC_TK_DoanhThu.Designer.cs">
-      <DependentUpon>UC_TK_DoanhThu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Report\UC_TK_TongQuan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Report\UC_TK_TongQuan.Designer.cs">
-      <DependentUpon>UC_TK_TongQuan.cs</DependentUpon>
-    </Compile>
+	  <Compile Include="Report\UC_TK_DoanhThu.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Report\UC_TK_DoanhThu.Designer.cs">
+		  <DependentUpon>UC_TK_DoanhThu.cs</DependentUpon>
+	  </Compile>
+	  <Compile Include="Report\UC_TK_TongQuan.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Report\UC_TK_TongQuan.Designer.cs">
+		  <DependentUpon>UC_TK_TongQuan.cs</DependentUpon>
+	  </Compile>
+	  <Compile Include="UC_HoaDon.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="UC_HoaDon.Designer.cs">
+		  <DependentUpon>UC_HoaDon.cs</DependentUpon>
+	  </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>

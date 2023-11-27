@@ -79,15 +79,32 @@ namespace FrmUCLibrary.Report
 
         private async void cbxLoaiSP_XH_SelectedValueChanged(object sender, EventArgs e)
         {
-            DateTime startDay = txtNgayBD.Value;
-            DateTime endDay = txtNgayKT.Value;
-            List<TK_NhapHangModel> list =await _xuLyThongKe.getTK_NhapHang_TheoNgay(startDay, endDay);
-            string maLoai = cbxLoaiSP_NH.SelectedValue.ToString();
-            List<TK_NhapHangModel> result = list.Where(m => m.MALOAI.Trim().Equals(maLoai.Trim())).ToList();
-            if(result != null)
+            try
             {
-                LoadDGVNhapHang(result);
-            }          
+                DateTime startDay = txtNgayBD.Value;
+                DateTime endDay = txtNgayKT.Value;
+                if (startDay == endDay) { MessageBox.Show("Ngày không hợp lê"); }
+                List<TK_NhapHangModel> list = await _xuLyThongKe.getTK_NhapHang_TheoNgay(startDay, endDay);
+                string maLoai = cbxLoaiSP_NH.SelectedValue.ToString();
+                List<TK_NhapHangModel> result = list.Where(m => m.MALOAI.Trim().Equals(maLoai.Trim())).ToList();
+                if (result != null)
+                {
+                    LoadDGVNhapHang(result);
+                }
+            }
+            catch
+            {
+                DateTime startDay = txtNgayBD.Value;
+                DateTime endDay = txtNgayKT.Value;
+                List<TK_NhapHangModel> list = await _xuLyThongKe.getTK_NhapHang_TheoNgay(startDay, endDay);
+                string maLoai = cbxLoaiSP_NH.SelectedValue.ToString();
+                List<TK_NhapHangModel> result = list.Where(m => m.MALOAI.Trim().Equals(maLoai.Trim())).ToList();
+                if (result != null)
+                {
+                    LoadDGVNhapHang(result);
+                }
+            }
+                   
         }
 
         private async void cbxLoaiSP_NH_SelectedValueChanged(object sender, EventArgs e)
