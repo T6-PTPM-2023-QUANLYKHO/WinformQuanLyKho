@@ -22,7 +22,7 @@ namespace Library
             private string _getAllNV = host + @"/api/nhan-vien/get-all";
             private string _getNVbyID = host + @"/api/nhan-vien/get-by-id/";
             private string _getNVbySdt = host + @"/api/nhan-vien/get-by-sdt/";
-            private string _deleteNV = host + @"api/nhan-vien/remove-by-manhanvien/";
+            private string _deleteNV = host + @"/api/nhan-vien/remove-by-manhanvien";
             private string _insertNV = host + "/api/nhan-vien/add-item";
             private string _updateNV = host + @"/api/nhan-vien/update/";
             //sản phẩm
