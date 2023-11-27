@@ -38,8 +38,8 @@ namespace _BLL
             {
                 // Truy xuất đến từng thuộc tính của obj để lấy dữ liệu
                 NhanVienModel nv = new NhanVienModel();
-                nv.MaNV = questions.maNhanVien.ToString();
-                nv.TenNV = questions.tenNhanVien.ToString();
+                nv.MaNhanVien = questions.maNhanVien.ToString();
+                nv.TenNhanVien = questions.tenNhanVien.ToString();
                 nv.Email = questions.email.ToString();
                 nv.NgaySinh = questions.ngaySinh.ToString();
                 nv.GioiTinh = questions.gioiTinh.ToString();
@@ -47,7 +47,7 @@ namespace _BLL
                 nv.DiaChi = questions.diaChi.ToString();
                 nv.Luong = questions.luong;
                 nv.BoPhan = questions.boPhan.ToString();
-                nv.ChucVu = await xlcv.layTenCVTheoMa(questions.maChucVu.ToString());
+                nv.MaChucVu = await xlcv.layTenCVTheoMa(questions.maChucVu.ToString());
                 listNhanVien.Add(nv);
             }
             if (listNhanVien != null) return listNhanVien;
@@ -61,8 +61,8 @@ namespace _BLL
             dynamic myObject = JValue.Parse(json); // Chuyển dữ liệu về dạng Object
             // Truy xuất đến từng thuộc tính của obj để lấy dữ liệu
             NhanVienModel nv = new NhanVienModel();
-            nv.MaNV = myObject.maNhanVien.ToString();
-            nv.TenNV = myObject.tenNhanVien.ToString();
+            nv.MaNhanVien = myObject.maNhanVien.ToString();
+            nv.TenNhanVien = myObject.tenNhanVien.ToString();
             nv.Email = myObject.email.ToString();
             nv.NgaySinh = myObject.ngaySinh.ToString();
             nv.GioiTinh = myObject.gioiTinh.ToString();
@@ -70,7 +70,7 @@ namespace _BLL
             nv.DiaChi = myObject.diaChi.ToString();
             nv.Luong = myObject.luong;
             nv.BoPhan = myObject.boPhan.ToString();
-            nv.ChucVu = await xlcv.layTenCVTheoMa(myObject.maChucVu.ToString());
+            nv.MaChucVu = await xlcv.layTenCVTheoMa(myObject.maChucVu.ToString());
             return nv;
         }
         public async Task<NhanVienModel> getNhanVienBySDT(string sdt)
@@ -81,8 +81,8 @@ namespace _BLL
             dynamic myObject = JValue.Parse(json); // Chuyển dữ liệu về dạng Object
             // Truy xuất đến từng thuộc tính của obj để lấy dữ liệu
             NhanVienModel nv = new NhanVienModel();
-            nv.MaNV = myObject.maNhanVien.ToString();
-            nv.TenNV = myObject.tenNhanVien.ToString();
+            nv.MaNhanVien = myObject.maNhanVien.ToString();
+            nv.TenNhanVien = myObject.tenNhanVien.ToString();
             nv.Email = myObject.email.ToString();
             nv.NgaySinh = myObject.ngaySinh.ToString();
             nv.GioiTinh = myObject.gioiTinh.ToString();
@@ -90,8 +90,27 @@ namespace _BLL
             nv.DiaChi = myObject.diaChi.ToString();
             nv.Luong = myObject.luong;
             nv.BoPhan = myObject.boPhan.ToString();
-            nv.ChucVu = await xlcv.layTenCVTheoMa(myObject.maChucVu.ToString());
+            nv.MaChucVu = await xlcv.layTenCVTheoMa(myObject.maChucVu.ToString());
             return nv;
+        }
+
+        public async Task<int> deleteNhanVien(string maNV)
+        {
+            maNV = maNV.Trim();
+            string url = api._DeleteNV;
+            return await lib.deleteData(url, maNV);
+        }
+
+        public async Task<int> addNhanVien(NhanVienModel nv)
+        {
+            string url = api._InsertNV;
+            return await lib.insertData(nv, url);
+        }
+
+        public async Task<int> updateNhanVien(NhanVienModel nv)
+        {
+            string url = api._UpdateNV;
+            return await lib.Update(nv, url);
         }
     }
 }

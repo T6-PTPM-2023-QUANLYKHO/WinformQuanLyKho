@@ -9,3 +9,17 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLib
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_SanPham.resources
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.GenerateResource.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CoreCompileInputs.cache
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_BLL.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_BLL.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CopyComplete
