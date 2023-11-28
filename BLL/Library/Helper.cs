@@ -44,7 +44,7 @@ namespace Library
             string gio = DateTime.Now.Hour.ToString();
             string phut = DateTime.Now.Minute.ToString();
             string giay = DateTime.Now.Second.ToString();
-            makh = "NCC" + ngay + thang + phut + giay;
+            makh = "CC" + ngay + thang + phut + giay;
             return makh;
         }
         public static string createMaPhieuXuat()
@@ -57,56 +57,6 @@ namespace Library
             string giay = DateTime.Now.Second.ToString();
             ma = "PX" + ngay + thang + phut + giay;
             return ma;
-        }
-        public static string ConvertNumberToWords(decimal number)
-        {
-            string[] units = { "", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười", "mười một", "mười hai", "mười ba", "mười bốn", "mười năm", "mười sáu", "mười bảy", "mười tám", "mười chín" };
-            string[] currencies = { "đồng", "nghìn", "triệu", "tỷ" };
-
-            string ConvertGroupOfThree(int num)
-            {
-                if (num == 0)
-                    return "";
-
-                if (num <= 19)
-                    return units[num];
-
-                int ten = num / 10;
-                int unit = num % 10;
-
-                if (unit == 0)
-                    return units[ten] + " mươi";
-                else
-                    return units[ten] + " mươi " + units[unit];
-            }
-
-            string result = "";
-            int groupIndex = 0;
-
-            while (number > 0)
-            {
-                int group = (int)(number % 1000);
-                number /= 1000;
-
-                if (group > 0)
-                {
-                    string groupWords = ConvertGroupOfThree(group);
-                    if (!string.IsNullOrEmpty(groupWords))
-                    {
-                        if (groupIndex > 0)
-                            result = groupWords + " " + currencies[groupIndex] + " " + result;
-                        else
-                            result = groupWords + " " + result;
-                    }
-                }
-
-                groupIndex++;
-            }
-
-            if (string.IsNullOrEmpty(result))
-                result = "không đồng";
-
-            return result;
         }
     }
 }

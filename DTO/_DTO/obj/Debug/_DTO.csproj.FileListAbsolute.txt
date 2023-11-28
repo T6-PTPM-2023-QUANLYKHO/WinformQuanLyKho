@@ -1,0 +1,6 @@
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\bin\Debug\_DTO.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\bin\Debug\_DTO.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.AssemblyReference.cache
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.CoreCompileInputs.cache
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.pdb

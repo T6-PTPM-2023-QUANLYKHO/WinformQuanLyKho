@@ -8,8 +8,6 @@ namespace _DTO
 {
     public class NhanVienModel
     {
-        //string maNV, tenNV, emailNV, ngaySinh, gioiTinh, sdt, diaChi, boPhan, maChucVu;
-        //int luong;
 
         public NhanVienModel()
         {
@@ -76,12 +74,12 @@ namespace _DTO
         //    set { luong = value; }
         //}
 
-        public string MaNV
+        public string MaNhanVien
         {
             get; set;
         }
 
-        public string TenNV
+        public string TenNhanVien
         {
             get; set;
         }
@@ -110,20 +108,20 @@ namespace _DTO
         {
             get; set;
         }
-
+        public int Luong
+        {
+            get; set;
+        }
         public string BoPhan
         {
             get; set;
         }
 
-        public string ChucVu
+        public string MaChucVu
         {
             get; set;
         }
 
-        public int Luong
-        {
-            get; set;
-        }
+        
     }
 }

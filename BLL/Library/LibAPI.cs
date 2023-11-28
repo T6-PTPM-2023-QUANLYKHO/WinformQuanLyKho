@@ -70,7 +70,8 @@ namespace Library
                     string jsonData = JsonConvert.SerializeObject(model);
 
                     // Gửi yêu cầu HTTP POST đến API
-                    HttpResponseMessage response = await client.PostAsync(url, new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json"));
+                    HttpResponseMessage response = await client.PostAsync(url, new StringContent(jsonData, 
+                        System.Text.Encoding.UTF8, "application/json"));
 
                     // Kiểm tra xem yêu cầu đã thành công (status code 200) hay không
                     if (response.IsSuccessStatusCode)

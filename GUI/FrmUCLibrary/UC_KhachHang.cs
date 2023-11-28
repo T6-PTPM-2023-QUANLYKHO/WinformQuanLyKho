@@ -326,11 +326,9 @@ namespace FrmUCLibrary
                     gioitinh = cbx_gioiTinh.SelectedItem.ToString();
                 }
             }
-            catch
-            {
-
-            }
+            catch            {            }
             if (String.IsNullOrEmpty(gioitinh)) { return false; }
+            if (!txt_Email.Text.Contains("@gmail.com")) { return false; }
             return true;
         }
 

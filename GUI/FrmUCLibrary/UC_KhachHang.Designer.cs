@@ -161,7 +161,7 @@
             // 
             this.btn_search.Image = global::FrmUCLibrary.Properties.Resources.search;
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_search.Location = new System.Drawing.Point(822, 53);
+            this.btn_search.Location = new System.Drawing.Point(822, 51);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(78, 25);
             this.btn_search.TabIndex = 3;
