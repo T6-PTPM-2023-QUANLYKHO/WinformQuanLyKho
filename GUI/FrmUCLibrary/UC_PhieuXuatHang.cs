@@ -667,7 +667,9 @@ namespace FrmUCLibrary
             exPX.MaPhieuXuat = txtMaPhieuXuat.Text;
             exPX.HoTenNV = "Trần Văn Hiền";
             exPX.SoDienThoaiNV = "0513481734";
-            exPX.TongTienBangChu = Helper.ConvertNumberToWords(int.Parse(exPX.TongTien));
+            double temp;
+            double.TryParse(exPX.TongTien, out temp);
+            exPX.TongTienBangChu = "";
             List<CTPhieuXuatModel> lstModel = getAllDataGVValue();
             List<SanPhamModel> lstSanPham = await _xuLySanPham.getAllSP();
             if (lstModel != null)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.AssemblyReference.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.SuggestedBindingRedirects.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.GUI.FrmKhachHang.MainForm.resources
@@ -5,6 +6,8 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\Winf
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.Properties.Resources.resources
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.GenerateResource.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CoreCompileInputs.cache
+=======
+>>>>>>> vanhien
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe.config
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.pdb

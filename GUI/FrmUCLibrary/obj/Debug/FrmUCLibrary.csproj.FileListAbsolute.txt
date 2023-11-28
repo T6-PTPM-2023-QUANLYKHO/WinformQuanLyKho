@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.AssemblyReference.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.Properties.Resources.resources
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.Report.UC_TK_DoanhThu.resources
@@ -11,6 +12,8 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLib
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CoreCompileInputs.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.pdb
+=======
+>>>>>>> vanhien
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\FrmUCLibrary.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.dll
@@ -23,3 +26,4 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\Library.
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_BLL.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\bin\Debug\_DTO.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.csproj.CopyComplete
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\FrmUCLibrary\obj\Debug\FrmUCLibrary.UC_HoaDon.resources

@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.AssemblyReference.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.CoreCompileInputs.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.pdb
+=======
+>>>>>>> vanhien
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\_BLL.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\_BLL.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\Library.dll

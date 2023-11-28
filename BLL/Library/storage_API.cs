@@ -168,7 +168,7 @@ namespace Library
             // SANG
             public string _GetAllNV
             {
-                get { return getAllKH; }
+                get { return _getAllNV; }
                 set { }
             }
             public string _GetNVbyID

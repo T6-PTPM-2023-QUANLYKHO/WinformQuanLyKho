@@ -30,9 +30,7 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
         }
         private void tạoPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         { 
-            mainContent.Controls.Clear();
-            UC_PhieuXuatHang ucPhieuXuatHang = new UC_PhieuXuatHang();
-            mainContent.Controls.Add(ucPhieuXuatHang);
+            
         }
 
         private void cậpNhậtThôngTinToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -64,6 +62,20 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             UC_HoaDon ucHD = new UC_HoaDon();
             ucHD.Dock = DockStyle.Fill;
             mainContent.Controls.Add(ucHD);
+        }
+
+        private void thôngTinNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_NhaCungCap ucNCC = new UC_NhaCungCap();
+            ucNCC.Dock = DockStyle.Fill;
+            mainContent.Controls.Add(ucNCC);
+        }
+        private void phiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_PhieuXuatHang ucPhieuXuatHang = new UC_PhieuXuatHang();
+            mainContent.Controls.Add(ucPhieuXuatHang);
         }
     }
 }
