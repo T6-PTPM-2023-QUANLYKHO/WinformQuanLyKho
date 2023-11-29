@@ -13,3 +13,15 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\_DTO.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\_DTO.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\bin\Debug\Library.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.CopyComplete
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\_BLL.dll
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\_BLL.pdb
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\Library.dll
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\Newtonsoft.Json.dll
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\_DTO.dll
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\_DTO.pdb
+D:\AAA\WinformQuanLyKho\BLL\_BLL\bin\Debug\Library.pdb
+D:\AAA\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.AssemblyReference.cache
+D:\AAA\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.CoreCompileInputs.cache
+D:\AAA\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.csproj.CopyComplete
+D:\AAA\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.dll
+D:\AAA\WinformQuanLyKho\BLL\_BLL\obj\Debug\_BLL.pdb

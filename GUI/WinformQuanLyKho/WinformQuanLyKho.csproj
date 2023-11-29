@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -56,6 +60,12 @@
     <Compile Include="GUI\FrmKhachHang\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FrmKhachHang\UC_DN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKhachHang\UC_DN.Designer.cs">
+      <DependentUpon>UC_DN.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Report\Frm_ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FrmKhachHang\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKhachHang\UC_DN.resx">
+      <DependentUpon>UC_DN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Report\Frm_ThongKe.resx">
       <DependentUpon>Frm_ThongKe.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrmUCLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace WinformQuanLyKho
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            Application.Run(new MainForm());            
+            Application.Run(new UC_DN());            
         }
     }
 }

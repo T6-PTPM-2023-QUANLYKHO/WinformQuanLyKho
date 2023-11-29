@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,17 +47,29 @@
   <ItemGroup>
     <Compile Include="ChucVuModel.cs" />
     <Compile Include="CTPhieuXuatModel.cs" />
+    <Compile Include="DangNhapModel.cs" />
+    <Compile Include="KeSPModel.cs" />
     <Compile Include="KhachHangModel.cs" />
+    <Compile Include="KhuModel.cs" />
     <Compile Include="LoaiSanPhamModel.cs" />
+    <Compile Include="ManHinhModel.cs" />
     <Compile Include="NhaCungCapModel.cs" />
     <Compile Include="EXPhieuXuatModel.cs" />
+    <Compile Include="NhomNguoiDungModel.cs" />
+    <Compile Include="PhanQuyenModel.cs" />
     <Compile Include="PhieuNhap.cs" />
     <Compile Include="NhanVienModel.cs" />
     <Compile Include="PhieuXuatModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamModel.cs" />
+    <Compile Include="SanPhamModel2.cs" />
+    <Compile Include="TaiKhoanNVModel.cs" />
+    <Compile Include="ThongKeSpModel.cs" />
     <Compile Include="TK_NhapHangModel.cs" />
     <Compile Include="TK_XuatHangModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -77,5 +77,29 @@ namespace WinformQuanLyKho.GUI.FrmKhachHang
             UC_PhieuXuatHang ucPhieuXuatHang = new UC_PhieuXuatHang();
             mainContent.Controls.Add(ucPhieuXuatHang);
         }
+
+        private void phânQuyềnNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_PhanQuyenNguoiDung ucPQ = new UC_PhanQuyenNguoiDung();
+            ucPQ.Dock = DockStyle.Fill;
+            mainContent.Controls.Add(ucPQ);
+        }
+
+        private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_THONGKE ucTK = new UC_THONGKE();
+            ucTK.Dock = DockStyle.Fill;
+            mainContent.Controls.Add(ucTK);
+        }
+
+        private void kệVàKhuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainContent.Controls.Clear();
+            UC_KE_KHU ucKeorKhu = new UC_KE_KHU();
+            ucKeorKhu.Dock = DockStyle.Fill;
+            mainContent.Controls.Add(ucKeorKhu);
+        }
     }
 }

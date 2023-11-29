@@ -4,3 +4,9 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.Asse
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.CoreCompileInputs.cache
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.pdb
+D:\AAA\WinformQuanLyKho\DTO\_DTO\bin\Debug\_DTO.dll
+D:\AAA\WinformQuanLyKho\DTO\_DTO\bin\Debug\_DTO.pdb
+D:\AAA\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.AssemblyReference.cache
+D:\AAA\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.csproj.CoreCompileInputs.cache
+D:\AAA\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.dll
+D:\AAA\WinformQuanLyKho\DTO\_DTO\obj\Debug\_DTO.pdb
