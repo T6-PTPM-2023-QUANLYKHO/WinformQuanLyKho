@@ -43,7 +43,11 @@ namespace FrmUCLibrary
                     {
                         ManHinhModel firstManHinh = manHinhInfo[0];
 
+<<<<<<< HEAD
                         if (firstManHinh.MA_MAN_HINH.Equals("MH003"))
+=======
+                        if (firstManHinh.MA_MAN_HINH.Equals("a"))
+>>>>>>> tuan
                         {
                             MessageBox.Show($"Đăng nhập thành công cho màn hình {firstManHinh.MA_MAN_HINH}");
                             MainForm a = new MainForm();

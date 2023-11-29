@@ -117,7 +117,11 @@ namespace FrmUCLibrary
             }
             try
             {
+<<<<<<< HEAD
                 List<SanPhamModel2> ketQuaThongKe = await xuLySanPhamModel.ThongKeDate(ngayBatDau, ngayKetThuc);
+=======
+                List<SanPhamModel> ketQuaThongKe = await xuLySanPhamModel.ThongKeDate(ngayBatDau, ngayKetThuc);
+>>>>>>> tuan
 
                 // Tạo một DataTable mới để lưu trữ dữ liệu
                 System.Data.DataTable dataTable = new System.Data.DataTable();
@@ -135,7 +139,11 @@ namespace FrmUCLibrary
                 dataTable.Columns.Add("Mã Kho", typeof(string));
                 dataTable.Columns.Add("Ảnh", typeof(Image));
                 // Thêm dòng dữ liệu vào DataTable
+<<<<<<< HEAD
                 foreach (SanPhamModel2 sp in ketQuaThongKe)
+=======
+                foreach (SanPhamModel sp in ketQuaThongKe)
+>>>>>>> tuan
                 {
                     DataRow row = dataTable.NewRow();
 

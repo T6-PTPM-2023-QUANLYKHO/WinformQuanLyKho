@@ -8,6 +8,21 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\obj\Debug\Library.cspro
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\obj\Debug\Library.csproj.CopyComplete
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\obj\Debug\Library.dll
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\obj\Debug\Library.pdb
+<<<<<<< HEAD
+=======
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\bin\Debug\_DTO.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\BLL\Library\bin\Debug\_DTO.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\bin\Debug\Library.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\bin\Debug\Library.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\bin\Debug\Newtonsoft.Json.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\bin\Debug\_DTO.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\bin\Debug\_DTO.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\obj\Debug\Library.csproj.AssemblyReference.cache
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\obj\Debug\Library.csproj.CopyComplete
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\obj\Debug\Library.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\BLL\Library\obj\Debug\Library.pdb
+>>>>>>> tuan
 D:\AAA\WinformQuanLyKho\BLL\Library\bin\Debug\Library.dll
 D:\AAA\WinformQuanLyKho\BLL\Library\bin\Debug\Library.pdb
 D:\AAA\WinformQuanLyKho\BLL\Library\bin\Debug\Newtonsoft.Json.dll

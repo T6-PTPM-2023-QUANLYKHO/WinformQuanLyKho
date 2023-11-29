@@ -16,8 +16,13 @@ namespace FrmUCLibrary
     {
         private XyLyDangNhapModel xyDangNhapModel;
         private XyLyManHinhModel xyLyManHinhModel;
+<<<<<<< HEAD
         private XuLyNhomNguoiDungModel xuLyNhomNguoiDung;
         private XuLyPhanQuyenModel xuLyPhanQuyen;
+=======
+        private XuLyNhomNguoiDung xuLyNhomNguoiDung;
+        private XuLyPhanQuyen xuLyPhanQuyen;
+>>>>>>> tuan
         private XuLyTaiKhoanNhanVien xuLyTaiKhoanNhanVien;
         public UC_PhanQuyenNguoiDung()
         {
@@ -28,8 +33,13 @@ namespace FrmUCLibrary
         {
             xyDangNhapModel = new XyLyDangNhapModel();
             xyLyManHinhModel = new XyLyManHinhModel();
+<<<<<<< HEAD
             xuLyNhomNguoiDung = new XuLyNhomNguoiDungModel();
             xuLyPhanQuyen = new XuLyPhanQuyenModel();
+=======
+            xuLyNhomNguoiDung = new XuLyNhomNguoiDung();
+            xuLyPhanQuyen = new XuLyPhanQuyen();
+>>>>>>> tuan
             xuLyTaiKhoanNhanVien = new XuLyTaiKhoanNhanVien();
             LoadDangNhap();
             LoadManHinh();
@@ -328,7 +338,11 @@ namespace FrmUCLibrary
                 }
                 NhomNguoiDungModel nd = new NhomNguoiDungModel(
              txtMaNhom.Text,
+<<<<<<< HEAD
              txtTenNhom.Text,
+=======
+             txtTenMH.Text,
+>>>>>>> tuan
              txtGhiChu.Text)
              ;
                 return nd;

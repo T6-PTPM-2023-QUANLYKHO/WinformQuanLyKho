@@ -23,8 +23,36 @@ D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\FrmUCLibrary.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Library.pdb
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CopyComplete
+<<<<<<< HEAD
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.exe
 D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.pdb
+=======
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.dll
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.pdb
+D:\HK-7\Phan-mem-thong-minh\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe.config
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\FrmUCLibrary.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Newtonsoft.Json.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Library.dll
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\FrmUCLibrary.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Library.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.AssemblyReference.cache
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.GUI.FrmKhachHang.MainForm.resources
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.Properties.Resources.resources
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.GenerateResource.cache
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CoreCompileInputs.cache
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CopyComplete
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.exe
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.pdb
+D:\ĐẠI HOC\PTTM\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\FrmUCLibrary.UC_DN.resources
+>>>>>>> tuan
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe.config
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.exe
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\WinformQuanLyKho.pdb
@@ -33,19 +61,29 @@ D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Newtonsoft.Json.dll
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.dll
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.dll
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Library.dll
+<<<<<<< HEAD
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Syncfusion.XlsIO.Base.dll
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Syncfusion.Compression.Base.dll
+=======
+>>>>>>> tuan
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_BLL.pdb
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\_DTO.pdb
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\FrmUCLibrary.pdb
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\bin\Debug\Library.pdb
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.AssemblyReference.cache
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.GUI.FrmKhachHang.MainForm.resources
+<<<<<<< HEAD
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.GUI.Report.Frm_ThongKe.resources
+=======
+D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\FrmUCLibrary.UC_DN.resources
+>>>>>>> tuan
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.Properties.Resources.resources
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.GenerateResource.cache
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CoreCompileInputs.cache
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.csproj.CopyComplete
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.exe
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\WinformQuanLyKho.pdb
+<<<<<<< HEAD
 D:\AAA\WinformQuanLyKho\GUI\WinformQuanLyKho\obj\Debug\FrmUCLibrary.UC_DN.resources
+=======
+>>>>>>> tuan

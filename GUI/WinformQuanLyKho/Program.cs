@@ -19,7 +19,12 @@ namespace WinformQuanLyKho
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
+<<<<<<< HEAD
             Application.Run(new UC_DN());            
+=======
+            Application.Run(new UC_DN());  
+           
+>>>>>>> tuan
         }
     }
 }

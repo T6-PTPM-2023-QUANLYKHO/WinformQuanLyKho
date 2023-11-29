@@ -8,6 +8,7 @@ namespace _DTO
 {
     public class ThongKeSpModel
     {
+<<<<<<< HEAD
 
         public SanPhamModel2 SanPham { get; set; } // Thông tin sản phẩm
         public int SoLuong { get; set; } // Số lượng
@@ -16,6 +17,16 @@ namespace _DTO
         {
             // Sao chép thông tin từ SanPhamModel
             this.SanPham = new SanPhamModel2
+=======
+       
+            public SanPhamModel SanPham { get; set; } // Thông tin sản phẩm
+            public int SoLuong { get; set; } // Số lượng
+
+        public ThongKeSpModel(SanPhamModel sanPham, int soLuong)
+        {
+            // Sao chép thông tin từ SanPhamModel
+            this.SanPham = new SanPhamModel
+>>>>>>> tuan
             {
                 mA_SP = sanPham.mA_SP,
                 mA_NCC = sanPham.mA_NCC,
@@ -37,3 +48,7 @@ namespace _DTO
 
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> tuan

@@ -8,7 +8,11 @@ namespace _DTO
 {
     public class NhomNguoiDungModel
     {
+<<<<<<< HEAD
         public NhomNguoiDungModel(string MA_NHOM, string TEN_NHOM, string GHI_CHU)
+=======
+        public NhomNguoiDungModel(string MA_NHOM, string TEN_NHOM, string GHI_CHU )
+>>>>>>> tuan
         {
             this.MA_NHOM = MA_NHOM;
             this.TEN_NHOM = TEN_NHOM;

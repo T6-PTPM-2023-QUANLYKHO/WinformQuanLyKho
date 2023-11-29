@@ -14,7 +14,7 @@ namespace Library
         public const string host = @"https://localhost:7202";
         public class API_KhachHang
         {
-            private static string host = @"https://localhost:7202";
+            private static string host = @"https://localhost:44327";
             //khách hàng
             private string _getAllKH = host + @"/api/khach-hang/get-all";
             private string _getKHBySDT = host + @"/api/khach-hang/get-by-sdt/";
@@ -46,6 +46,16 @@ namespace Library
             private string _deleteNhaCungCap = host + @"/api/nha-cung-cap/remove-by-maphieu";
             private string _updateNhaCungCap = host + @"/api/nha-cung-cap/update";
             private string _timKiemNhaCungCapSDT = host + @"/api/nha-cung-cap/get-by-sdt";
+<<<<<<< HEAD
+=======
+            //sản phẩm
+            private string _getAllSanPham = host + @"/api/San-pham/get-all";
+            private string _getSPById = host + @"/api/San-pham/get-by-id/";
+            private string _getThongKeNhapHang = host + @"/api/San-pham/thong-ke-sl-nhap";
+            private string _getThongKeXuatHang = host + @"/api/San-pham/thong-ke-sl-ban";
+            private string _getThongKeTonKho = host + @"/api/San-pham/thong-ke-ton-kho";
+            private string _getThongKeDate = host + @"/api/San-pham/thong-ke-date";
+>>>>>>> tuan
             //Loại sản phẩm
             private string _getAllLoaiSP = host + @"/api/loai-sp/get-all";
             //Phiếu Xuất Hàng
@@ -57,6 +67,7 @@ namespace Library
             private string _insertCTXuatHang = host + @"/api/chi-tiet-xuat-hang/add-item";
             private string _deleteCTPhieuXuatMaPh = host + @"/api/chi-tiet-xuat-hang/remove";
             private string _getCTPhieuXuatByMaPhieu = host + @"/api/chi-tiet-xuat-hang/get-by-id/";
+<<<<<<< HEAD
             //phiêu nhập hàng Hiền
             private string _getPhieuNhapSoNgay = host + @"/api/phieu-nhap-hang/get-phieu-nhap-so-ngay/";
 
@@ -73,6 +84,17 @@ namespace Library
             private string _getThongKeXuatHang = host + @"/api/San-pham/thong-ke-sl-ban";
             private string _getThongKeTonKho = host + @"/api/San-pham/thong-ke-ton-kho";
             private string _getThongKeDate = host + @"/api/San-pham/thong-ke-date";
+=======
+            //Đăng nhập   
+            private string _getallDN = host + @"/api/tai-khoan-dn/get-all";
+            private string _getTK = host + @"/api/tai-khoan-dn/get-by-id/{taikhoan-dn}";
+            private string _gettkmk = host +@"api/tai-khoan-dn/get-by-tkmk/{taikhoan-dn}/{matkhau-dn}";
+            private string _puttkmk = host + @"/api/tai-khoan-dn/add-item";
+            private string _removeDN = host + @"/api/tai-khoan-dn/remove-by-taikhoan-dn";
+            private string _repairDN = host + @"/api/tai-khoan-dn/update";
+            private string _getManHinh = host + @"/api/man-hinh/man-hinh/"; 
+
+>>>>>>> tuan
             //Kệ và Khu
             private string _getKhu = host + @"/api/Khu/get-all";
             private string _getKhuID = host + @"/api/Khu/get-by-id/";
@@ -104,7 +126,11 @@ namespace Library
             private string _addPQ = host + @"/api/phan-quyen/add-item";
             private string _removePQ = host + @"/api/phan-quyen/remove-by-manhomnguoidung";
             private string _updatePQ = host + @"/api/phan-quyen/update";
+<<<<<<< HEAD
             private string _getByMaNhom = host + @"/api/nhom-nguoi-dung/manhom";
+=======
+            private string _getByMaNhom= host + @"/api/nhom-nguoi-dung/manhom";
+>>>>>>> tuan
             private string _getByMaManHinh = host + @"/api/man-hinh/mamanhinh";
             //Tài Khoản
             private string _getAllTK = host + @"/api/tai-khoan/get-all";
@@ -115,6 +141,7 @@ namespace Library
             private string _getByNhanVien = host + @"/api/nhan-vien/nhan-vien";
             private string _getByNhomNgDung = host + @"/api/nhom-nguoi-dung/manhom";
 
+<<<<<<< HEAD
 
 
 
@@ -133,6 +160,12 @@ namespace Library
                 get { return _getPhieuXuatSoNgay; }
                 set { _getPhieuXuatSoNgay = value; }
             }
+=======
+            private string REMOVE_BY_TaiKhoanDN = host + @"api/tai-khoan-dn/remove-by-taikhoan-dn/{id}";
+            private string REMOVE_ITEM = host + @"api/tai-khoan-dn/remove/{taikhoan-dn}";
+            private string UPDATE_ITEM = host + @"api/tai-khoan-dn/update/{taikhoan-dn}";
+
+>>>>>>> tuan
             public string getCTPhieuXuatByMaPhieu
             {
                 get { return _getCTPhieuXuatByMaPhieu; }
@@ -228,6 +261,7 @@ namespace Library
                 get { return _updateKhachHang; }
                 set { }
             }
+<<<<<<< HEAD
             // SANG
             public string _GetAllNV
             {
@@ -307,6 +341,8 @@ namespace Library
 
 
             //Tuan
+=======
+>>>>>>> tuan
             public string getallDN
             {
                 get { return _getallDN; }
@@ -320,7 +356,11 @@ namespace Library
             public string puttkmk
             {
                 get { return _puttkmk; }
+<<<<<<< HEAD
                 set { }
+=======
+                set {  }
+>>>>>>> tuan
             }
             public string getTK
             {
@@ -533,6 +573,7 @@ namespace Library
                 get { return _getManHinh; }
                 set { }
             }
+<<<<<<< HEAD
         
 
     }
@@ -552,6 +593,8 @@ namespace Library
                 get { return _thongKePhieuNhap; }
                 set { _thongKePhieuNhap = value; }
             }
+=======
+>>>>>>> tuan
         }
     }
 }

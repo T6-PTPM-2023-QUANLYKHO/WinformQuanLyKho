@@ -16,5 +16,10 @@ namespace _DTO
         }
         public string MA_MAN_HINH { get; set; }
         public string TEN_MAN_HINH { get; set; }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> tuan
     }
 }

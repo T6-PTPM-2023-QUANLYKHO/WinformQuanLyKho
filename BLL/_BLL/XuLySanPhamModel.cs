@@ -27,7 +27,10 @@ namespace _BLL
             SanPhamModel sp = JsonConvert.DeserializeObject<SanPhamModel>(json);
             return sp;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> tuan
         public async Task<List<ThongKeSpModel>> ThongKeSLNhap(DateTime ngaybd, DateTime ngaykt)
         {
             // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
@@ -52,13 +55,24 @@ namespace _BLL
             List<ThongKeSpModel> lst = JsonConvert.DeserializeObject<List<ThongKeSpModel>>(json);
             return lst;
         }
+<<<<<<< HEAD
         public async Task<List<SanPhamModel2>> ThongKeDate(DateTime ngaybd, DateTime ngaykt)
+=======
+        public async Task<List<SanPhamModel>> ThongKeDate(DateTime ngaybd, DateTime ngaykt)
+>>>>>>> tuan
         {
             // Tạo URL với thông tin ngày bắt đầu và ngày kết thúc
             string url = api.getThongKeDate + "?ngaybd=" + ngaybd.ToString("yyyy-MM-dd") + "&ngaykt=" + ngaykt.ToString("yyyy-MM-dd");
             string json = await lib.getData(url);
+<<<<<<< HEAD
             List<SanPhamModel2> lst = JsonConvert.DeserializeObject<List<SanPhamModel2>>(json);
             return lst;
         }
+=======
+            List<SanPhamModel> lst = JsonConvert.DeserializeObject<List<SanPhamModel>>(json);
+            return lst;
+        }
+
+>>>>>>> tuan
     }
 }

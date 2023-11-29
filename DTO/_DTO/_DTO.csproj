@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +37,13 @@
       <HintPath>..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+>>>>>>> tuan
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,12 +57,17 @@
     <Compile Include="ChucVuModel.cs" />
     <Compile Include="CTPhieuXuatModel.cs" />
     <Compile Include="DangNhapModel.cs" />
+<<<<<<< HEAD
     <Compile Include="KeSPModel.cs" />
+=======
+    <Compile Include="KeModel.cs" />
+>>>>>>> tuan
     <Compile Include="KhachHangModel.cs" />
     <Compile Include="KhuModel.cs" />
     <Compile Include="LoaiSanPhamModel.cs" />
     <Compile Include="ManHinhModel.cs" />
     <Compile Include="NhaCungCapModel.cs" />
+<<<<<<< HEAD
     <Compile Include="EXPhieuXuatModel.cs" />
     <Compile Include="NhomNguoiDungModel.cs" />
     <Compile Include="PhanQuyenModel.cs" />
@@ -67,6 +81,15 @@
     <Compile Include="ThongKeSpModel.cs" />
     <Compile Include="TK_NhapHangModel.cs" />
     <Compile Include="TK_XuatHangModel.cs" />
+=======
+    <Compile Include="NhomNguoiDungModel.cs" />
+    <Compile Include="PhanQuyenModel.cs" />
+    <Compile Include="PhieuXuatModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPhamModel.cs" />
+    <Compile Include="TaiKhoanNVModel.cs" />
+    <Compile Include="ThongKeSpModel.cs" />
+>>>>>>> tuan
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
